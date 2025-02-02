@@ -1,10 +1,6 @@
 @import 'partials/marquee.css';
 @import 'partials/hero.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 a:hover {
 	cursor: hand;
 }
