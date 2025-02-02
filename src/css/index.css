@@ -27,3 +27,24 @@
     background-repeat: no-repeat;
     padding-top: 152px;
 }
+.function div:hover,
+.analysts div:hover {
+	box-shadow: 0 0 15px 15px rgba(255, 240, 133, 0.5);
+}
+.function div:hover:before {
+	animation: sh02 0.5s 0s linear;
+}
+
+@keyframes sh02 {
+	0% {
+		opacity: 0;
+		left: 0%;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		left: 100%;
+	}
+}
