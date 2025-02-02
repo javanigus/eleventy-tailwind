@@ -1,0 +1,13 @@
+@import 'partials/marquee.css';
+@import 'partials/hero.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a:hover {
+	cursor: hand;
+}
+.white-text-shadow {
+	text-shadow: 2px 2px 4px #000000;
+}
