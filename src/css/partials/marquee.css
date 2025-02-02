@@ -21,6 +21,16 @@
   --marquee-items: 8;
 }
 
+.marquee--3.customers {
+  --marquee-item-width: 150px;
+  --marquee-item-height: 110px;
+}
+
+.marquee--3.awards {
+  --marquee-item-height: 170px;
+  --marquee-item-width: 210px;
+}
+
 .marquee__item {
   --marquee-item-offset: max(
     calc(var(--marquee-item-width) * var(--marquee-items)),
@@ -34,6 +44,10 @@
   transition: 200ms filter linear, 200ms -webkit-filter linear;
   -webkit-filter: contrast(0) grayscale(1);
   filter: contrast(0) grayscale(1);
+}
+
+.no-mask .marquee__item{
+  filter: none;
 }
 
 .marquee:hover .marquee__item {
