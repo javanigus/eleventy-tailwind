@@ -3,6 +3,14 @@
 	position: relative;
 	overflow: hidden;
 }
+.button.cta {
+  background-color: #FF5D5F;
+  transition: background-color .2s ease-in;
+}
+.button.cta:hover {
+  background-color:  var(--color-violet-900);
+  cursor: pointer;
+}
 .button span {
     z-index: 20;
 }
