@@ -1,0 +1,1190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aisera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+	  <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css-aisera2/tailwind.css" />
+    <link rel="stylesheet" href="/css-aisera2/partials/tooltip.css" />
+    <link rel="stylesheet" href="/css-aisera2/partials/aisera-logo.css" />
+    <link rel="stylesheet" href="/css-aisera2/partials/menu.css" />
+    <link rel="stylesheet" href="/css-aisera2/index.css" />
+  </head>
+  <body>
+
+<div class="dev-notice p-8 bg-red-600 text-white text-lg">
+  <p class="mb-10">This test page has only been designed for desktop. The tablet and mobile designs are not ready. Please increase your browser width beyond 1080 px to view the page.</p>
+</div>
+
+<div class="bg-white body-wrapper">
+
+<div class="banner-and-header">
+  <div id="banner" class="banner flex items-center gap-x-6 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 z-50">
+    <p class="text-sm leading-6 text-white">
+      <a href="#">
+        Aisera named a Leader in the October, 2024 Gartner® Magic Quadrant™ for Artificial Intelligence Applications in IT Service Management &nbsp;<span aria-hidden="true"><svg style="display: inline-block;" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+          <path d="M12.5309 5.14V4.36C12.3042 4.33333 12.0909 4.29333 11.8909 4.24C11.6909 4.18667 11.4842 4.11333 11.2709 4.02C11.0575 3.92667 10.8575 3.82667 10.6709 3.72C10.4842 3.6 10.2975 3.44667 10.1109 3.26L8.17086 1.34L9.41086 0.14L15.2509 6L9.41086 11.88L8.17086 10.66L10.0309 8.82C10.2575 8.60667 10.4775 8.43333 10.6909 8.3C10.9042 8.16667 11.1175 8.06 11.3309 7.98C11.5309 7.9 11.7309 7.83333 11.9309 7.78C12.1309 7.71333 12.3309 7.67333 12.5309 7.66V6.88L0.0308594 6.88L0.0308594 5.14L12.5309 5.14Z" fill="#ffffff"></path>
+        </svg></span>
+      </a>
+    </p>
+    <a href="" class="flex flex-1 justify-end">
+      <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+        <span class="sr-only">Dismiss</span>
+        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+        </svg>
+      </button>
+    </a>
+  </div>
+
+  <header id="header" class="inset-x-0 top-[44px] z-50 sticky top- mx-auto max-w-7xl">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Aisera</span>
+          <!-- <img class="h-10 w-auto" src="https://aisera.com/wp-content/themes/aisera_child_theme/images/aisera-logo.svg" alt=""> -->
+          <svg id="aisera-logo" width="112" height="40" viewBox="0 0 112 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_4829_2555)">
+            <path d="M67.0569 24.4844H54.1016V27.9384H67.0569V24.4844Z" fill="#FF5D5F" class="svg-elem-1"></path>
+            <path d="M67.0569 8.54199H54.1016V11.996H67.0569V8.54199Z" fill="#FF5D5F" class="svg-elem-2"></path>
+            <path d="M67.0569 16.5132H54.1016V19.9672H67.0569V16.5132Z" fill="#FF5D5F" class="svg-elem-3"></path>
+            <path d="M21.6928 35.4551C19.4531 36.1968 17.1731 36.5664 14.8528 36.5664C12.5325 36.5664 10.2525 36.1968 8.01275 35.4551C5.773 34.7134 3.71444 33.6846 1.83708 32.3535L0 35.1455C2.11895 36.6763 4.43924 37.8675 6.96084 38.719C9.47993 39.5681 12.1097 39.9976 14.8503 40.0001C17.5908 40.0001 20.2206 39.5681 22.7397 38.719C25.2613 37.8575 27.5816 36.6763 29.7006 35.1455L27.8635 32.3535C25.9911 33.6821 23.9326 34.7134 21.6928 35.4551Z" fill="#FF5D5F" class="svg-elem-4"></path>
+            <path d="M28.9062 8.54199H25.4258V27.9383H28.9062V8.54199Z" fill="#FF5D5F" class="svg-elem-5"></path>
+            <path d="M46.4195 18.2488C45.8634 17.8292 45.2494 17.4971 44.5724 17.2374C43.8954 16.9877 43.2512 16.7579 42.6246 16.5556C42.0684 16.3958 41.555 16.226 41.102 16.0662C40.6491 15.9063 40.2539 15.7166 39.9318 15.4968C39.6097 15.277 39.358 15.0173 39.1743 14.7052C38.9931 14.3955 38.9026 14.0234 38.9026 13.5839C38.9026 13.1044 39.0133 12.7024 39.2247 12.3627C39.4361 12.0231 39.7079 11.7534 40.0426 11.5411C40.3647 11.3313 40.7397 11.1715 41.1423 11.0716C41.545 10.9717 41.9501 10.9218 42.3528 10.9218C43.0297 10.9218 43.7042 11.0816 44.3811 11.4013C45.0581 11.7209 45.5715 12.123 45.9439 12.5925L45.954 12.5425L48.2139 10.0802C47.4564 9.38848 46.568 8.86905 45.5513 8.51944C44.5221 8.16982 43.523 8 42.5239 8C41.6356 8 40.7673 8.10988 39.9117 8.33962C39.0536 8.56937 38.2986 8.90901 37.6216 9.38099C36.9547 9.85048 36.4111 10.4423 35.9984 11.1515C35.5857 11.8733 35.3718 12.7123 35.3718 13.7038C35.3718 14.6253 35.5228 15.3844 35.8147 15.9962C36.1167 16.6056 36.4917 17.1275 36.9648 17.547C37.4279 17.9666 37.9639 18.3087 38.5477 18.5584C39.1316 18.8182 39.728 19.0379 40.3143 19.2202C40.9208 19.42 41.4946 19.6098 42.0508 19.7896C42.5944 19.9694 43.08 20.1792 43.4827 20.4289C43.8854 20.6786 44.21 20.9683 44.4516 21.3104C44.6932 21.65 44.814 22.0521 44.814 22.5815C44.814 23.111 44.7032 23.553 44.4918 23.9126C44.2805 24.2722 44.0087 24.5644 43.6639 24.8041C43.3217 25.0438 42.9366 25.2137 42.5138 25.3135C42.091 25.4134 41.6758 25.4634 41.2732 25.4634C40.4956 25.4634 39.7104 25.2736 38.9126 24.894C38.1149 24.5144 37.4706 23.9925 36.995 23.3332L34.5137 25.6357C35.2913 26.5572 36.2904 27.2364 37.5008 27.7084C38.7113 28.1779 39.952 28.4101 41.2228 28.4101C42.1816 28.4101 43.0901 28.2803 43.9558 28.0306C44.814 27.7709 45.569 27.3888 46.2157 26.8793C46.86 26.3699 47.3759 25.7281 47.7584 24.9464C48.1409 24.1748 48.3347 23.2658 48.3347 22.2244C48.3347 21.273 48.1635 20.4838 47.8011 19.842C47.4388 19.2002 46.9858 18.6683 46.4195 18.2488Z" fill="#FF5D5F" class="svg-elem-6"></path>
+            <path d="M10.7046 12.655L16.7268 27.9383H20.6124L12.1064 8.54199H10.7046H9.30037L0.796875 27.9383H4.67996L10.7046 12.655Z" fill="#FF5D5F" class="svg-elem-7"></path>
+            <path d="M102.093 12.655L108.115 27.9383H112.001L103.495 8.54199H102.093H100.692L92.1855 27.9383H96.0711L102.093 12.655Z" fill="#FF5D5F" class="svg-elem-8"></path>
+            <path d="M80.8647 8.54199H77.1855H73.7051V27.9383H77.1855V21.5078H80.7817L81.597 23.5031L83.4241 27.9358H87.4002L84.2118 20.5913C86.1218 19.46 87.4002 17.3898 87.4002 15.0224C87.3977 11.4438 84.4735 8.54199 80.8647 8.54199ZM80.8647 18.0541H77.1855V11.9957H80.8647C82.5483 11.9957 83.9173 13.3542 83.9173 15.0249C83.9173 16.6956 82.5483 18.0541 80.8647 18.0541Z" fill="#FF5D5F" class="svg-elem-9"></path>
+            </g>
+            <defs>
+            <clipPath id="clip0_4829_2555">
+            <rect width="112" height="40" fill="white" class="svg-elem-10"></rect>
+            </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      <a href="" class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </a>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#" class="text-base font-semibold leading-6 text-gray-900 hover-underline-animation left">Products</a>
+        <a href="#" class="text-base font-semibold leading-6 text-gray-900 hover-underline-animation left">Platform</a>
+        <a href="#" class="text-base font-semibold leading-6 text-gray-900 hover-underline-animation left">Solutions</a>
+        <a href="#" class="text-base font-semibold leading-6 text-gray-900 hover-underline-animation left">Customers</a>
+        <a href="#" class="text-base font-semibold leading-6 text-gray-900 hover-underline-animation left">Resources</a>
+        <a href="#" class="text-base font-semibold leading-6 text-gray-900 hover-underline-animation left">Company</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-12 items-center">
+        <a href=""><button class="button cta rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Get a Demo</button></a>
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-50"></div>
+      <div class="hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600" alt="">
+          </a>
+          <a href="">
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </a>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+            </div>
+            <div class="py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div id="hero" class="swiper max-h-[912px]">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide hero relative isolate overflow-hidden bg-white slide1" style="background: linear-gradient(132deg, #2f0d68 0%, #2f0d68 24%, #4d179a 24%, #4d179a 43%, #c4b4ff 43%, #c4b4ff 52%, #ddd6ff 52%, #f6cfff 100%);">
+      <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+        <defs>
+          <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+      </svg>
+      <div class="mx-auto max-w-7xl px-6 pb-12 pt-12 sm:pb-32 lg:flex lg:px-8 lg:py-24">
+        <div class="el mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+          <span class="rounded-full bg-yellow-200 px-3 py-1 text-med font-semibold leading-0 text-black ring-1 ring-inset ring-blue-600/10  ">2024 Gartner Magic Quadrant</span>
+          <h1 class="mt-4 text-4xl font-bold tracking-tight text-white sm:text-6xl">Aisera Named a Leader</h1>
+          <p class="mt-6 text-2xl leading-8 text-white italic">for <b>Artificial Intelligence Apps</b> in <b>IT Service Management</b></p>
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href=""><button class="border-[1px] border-white button cta rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Download Report</button></a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hidden">Learn more <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="el2 mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+          <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+            <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+              <img src="https://ik.imagekit.io/dumani/test-tailwind-ui/gartner_hugMQ6FIt.jpg?updatedAt=1738363347523" width=""  class="h-[500px] rounded-md shadow-2xl ring-1 ring-gray-900/10">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-cover bg-bottom swiper-slide hero relative isolate overflow-hidden bg-white" style="background-image: radial-gradient(circle at 100% 100%, #f6cfff, #67e2fe00 50%), radial-gradient(circle at 0 0, #a366ff80, #a366ff00 50%);  background-color: #140033;">
+      <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+        <defs>
+          <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+      </svg>
+      <div class="mx-auto max-w-7xl px-6 pb-12 pt-12 sm:pb-32 lg:flex lg:px-8 lg:py-24">
+        <div class="el mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+          <span class="rounded-full bg-yellow-200 px-3 py-1 text-med font-semibold leading-0 text-black ring-1 ring-inset ring-blue-600/10  ">2024 Forrester Wave™</span>
+          <h1 class="mt-4 text-4xl font-bold tracking-tight text-white sm:text-6xl">Aisera Named a Leader</h1>
+          <p class="mt-6 text-2xl leading-8 text-white italic">for <b>Conversational AI Platforms</b> for <b>Employee Services</b></p>
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href=""><button class="border-[1px] border-white button cta rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Download Report</button></a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hidden">Learn more <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="el2 mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+          <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+            <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+              <img src="https://ik.imagekit.io/dumani/test-tailwind-ui/forrester_RRHO9J8PL.jpg" width=""  class="h-[500px] rounded-md shadow-2xl ring-1 ring-gray-900/10">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<section id="logos" class="bg-slate-50">
+  <a href="/customers/" class="marquee marquee--3">
+    <img class="marquee__item h-11" src="https://ik.imagekit.io/dumani/test-tailwind-ui/logo-pan-preto_tVWG5rmQtu.svg?updatedAt=1718291686735"  alt="Banco Pan">
+    <img class="marquee__item h-7" src="https://ik.imagekit.io/dumani/test-tailwind-ui/ancestry-120-2x_qNNNJRGWRK.png?updatedAt=1718291686749" alt="">
+    <img class="marquee__item h-16" src="https://ik.imagekit.io/dumani/test-tailwind-ui/celestica-120-2x_U273UOYfE3.png?updatedAt=1718291685453" alt="">
+    <img class="marquee__item h-12" src="https://ik.imagekit.io/dumani/test-tailwind-ui/capital-one-logo_iWFe2Eep0.svg?updatedAt=1718291685422" alt="">
+    <img class="marquee__item h-12" src="https://ik.imagekit.io/dumani/test-tailwind-ui/cisco-logo_tbh-Jc2pf.svg?updatedAt=1718291684982" alt="">
+    <img class="marquee__item h-8" src="https://ik.imagekit.io/dumani/test-tailwind-ui/avaya_GPtaZHkFNV.svg?updatedAt=1718291685493" alt="">
+    <img class="marquee__item h-8" src="https://ik.imagekit.io/dumani/test-tailwind-ui/microsoft_smqyj6d9v.svg?updatedAt=1718291685039" alt="">
+    <img class="marquee__item h-10" src="https://ik.imagekit.io/dumani/test-tailwind-ui/ibm-security_H5KkXfTpz6.png?updatedAt=1718291685464" alt="">
+  </a>
+</section>
+
+<section id="features" class="pt-24 pb-24 relative isolate bg-violet-100 " style="background-image: radial-gradient(circle at 100% 100%, rgba(125463, 102, 255, 0.5), rgba(163, 102, 255, 0) 50%), radial-gradient(circle at 0px 0px, rgba(77, 23, 154, 0.5), rgba(77, 23, 154, 0) 50%);">
+  <div class="absolute hidden inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#38bdf8] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div> 
+    </div>
+  <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#38bdf8] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% .1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, .1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+  <div class="el mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl sm:text-center mb-16">
+      <h2 class="text-3xl font-bold tracking-tight text-violet-900 sm:text-4xl">AI Agents that Drive Business Value</h2>
+      <p class="mt-2 text-2xl font-semibold leading-7 text-gray-800">Supercharge your Workforce with AI Agents</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600 hidden">Seamlessly deploy Cloud Agents and add users to measure, communicate, and eliminate cyber risk across the extended enterprise.</p>
+      <div class="flex flex-row items-center justify-center mb-6 mt-6"> <a href="#" class="font-base leading-6 text-[#FF5D5F] text-lg mr-2" aria-describedby="featured-post">Learn More</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+        <path d="M12.5309 5.14V4.36C12.3042 4.33333 12.0909 4.29333 11.8909 4.24C11.6909 4.18667 11.4842 4.11333 11.2709 4.02C11.0575 3.92667 10.8575 3.82667 10.6709 3.72C10.4842 3.6 10.2975 3.44667 10.1109 3.26L8.17086 1.34L9.41086 0.14L15.2509 6L9.41086 11.88L8.17086 10.66L10.0309 8.82C10.2575 8.60667 10.4775 8.43333 10.6909 8.3C10.9042 8.16667 11.1175 8.06 11.3309 7.98C11.5309 7.9 11.7309 7.83333 11.9309 7.78C12.1309 7.71333 12.3309 7.67333 12.5309 7.66V6.88L0.0308594 6.88L0.0308594 5.14L12.5309 5.14Z" fill="#FF5D5F"></path>
+      </svg> </div>
+    </div>
+  </div>
+  <div class="hover:drop-shadow-2xl block mx-auto max-w-4xl relative -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10  lg:rounded-2xl lg:p-4">
+    <img src="https://ik.imagekit.io/dumani/test-tailwind-ui/aisera-video-poster-image_TWcBmwX9m.jpg" alt="" class="rounded-md">
+  </div>
+
+  <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-10 gap-y-10 text-lg leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-10 lg:gap-y-16">
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+          </svg>
+          Transform Experiences
+        </dt>
+        <dd class="inline">Deliver self-service at scale through a unified interface that simplifies work
+        </dd>
+      </div>
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+          </svg>
+          Increase Productivity
+        </dt>
+        <dd class="inline">Automate routine and repetitive tasks, enabling users to resolve issues quickly and boosting productivity
+        </dd>
+      </div>
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z" clip-rule="evenodd" />
+          </svg>
+          Reduce Costs
+        </dt>
+        <dd class="inline">Reduce ticket volume and optimize resources to save costs
+        </dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section id="news" class="bg-violet-950 pt-24 sm:pb-32 relative" style="background-image: radial-gradient(circle at 100% 100%, rgba(125463, 102, 255, 0.5), rgba(163, 102, 255, 0) 50%), radial-gradient(circle at 0px 0px, rgba(77, 23, 154, 0.5), rgba(77, 23, 154, 0) 50%); background-color: #140033">
+ 
+  <!-- background-image: 
+   radial-gradient(circle at 100% 100%, #f6cfff, #67e2fe00 50%), 
+   radial-gradient(circle at 0 0, #a366ff80, #a366ff00 50%);  
+   background-color: #140033; -->
+  <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+    <defs>
+      <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+        <path d="M.5 200V.5H200" fill="none" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+  </svg>
+
+  <div class="mx-auto max-w-5xl flex flex-row pb-24 justify-center">    
+    <div class="p-4 border border-purple-300 rounded-lg mx-6 bg-yellow-200 text-black">
+      <svg xmlns="http://www.w3.org/2000/svg" width="105" height="32" viewBox="0 0 105 32" fill="none"><path d="M12.1573 2.66797H4.4311C2.17764 2.66797 0.246094 4.49234 0.246094 6.85328V25.4189C0.246094 27.6725 2.07033 29.6042 4.4311 29.6042H12.3719C16.0204 29.6042 19.4542 28.2091 21.9223 25.6335C24.4977 23.058 25.7854 19.6239 25.7854 15.9751C25.6781 8.57033 19.5615 2.66797 12.1573 2.66797ZM10.5477 23.2726H8.4015V8.89228H10.5477C15.2692 8.89228 17.7373 12.1118 17.7373 16.0824C17.7373 20.0531 15.2692 23.2726 10.5477 23.2726Z" fill="#000000"></path><path d="M48.3106 4.60002C46.0332 2.86472 43.2135 2.10547 39.9601 2.10547C36.1644 2.10547 33.5616 2.75625 31.718 3.29853C27.4885 4.60001 29.0068 10.9989 33.887 9.80592C38.1165 8.82981 43.7558 8.28753 43.7558 13.0596V13.385C42.4544 12.9511 39.6347 12.4089 36.3813 12.7342C30.7419 13.2765 27.0547 16.5302 27.0547 20.9769C27.0547 26.3998 30.7419 29.8704 36.3813 29.8704C40.5023 29.8704 42.7798 28.1351 43.9727 27.0505C44.1896 27.5928 44.5149 28.0266 44.9487 28.4604C45.7079 29.2196 46.7924 29.6535 47.8768 29.6535H47.9853C50.2627 29.6535 52.1063 27.8097 52.1063 25.5321V13.9273C52.1063 13.8188 52.1063 13.7104 52.1063 13.6019C52.2148 11.8666 52.2148 7.41989 48.3106 4.60002ZM43.7558 19.0247C43.7558 24.6645 35.2968 24.9898 35.2968 20.8685C35.2968 17.2894 39.0925 16.8556 43.7558 18.2655V19.0247Z" fill="#000000"></path><path d="M61.4482 26.0663C60.5898 24.3493 59.624 22.203 58.6582 20.0566L61.4482 26.0663Z" fill="#000000"></path><path d="M62.2973 27.8056C62.1888 27.6971 62.0804 27.4802 61.9719 27.2633L61.4297 26.0703C61.8635 26.7211 62.0804 27.2633 62.2973 27.8056Z" fill="#000000"></path><path d="M78.5642 7.95902L69.6714 27.3727C69.4545 27.915 69.0207 28.4573 68.5869 28.7827C67.9362 29.5419 66.8517 29.9757 65.8756 29.9757C64.4658 29.9757 63.1645 29.2165 62.5138 27.915C62.2969 27.3727 61.9715 26.8304 61.6462 26.1797V26.0713L58.8265 19.9977L53.2956 7.95902C51.9942 5.2476 54.0548 2.10234 57.0913 2.10234C58.8265 2.10234 60.4532 3.1869 60.9955 4.81375L61.5377 6.33217L63.2729 11.1042C64.1405 13.0565 65.0081 15.1171 65.9841 17.1778C66.9601 15.0087 67.9362 12.8396 68.9122 10.8874L70.539 6.4406L71.0812 4.81375C71.6234 3.1869 73.2502 2.10234 74.9854 2.10234C77.805 1.99388 79.8655 5.13915 78.5642 7.95902Z" fill="#000000"></path><path d="M92.0796 23.0406C89.8022 23.0406 86.7656 21.4137 86.4403 18.7023H99.7795C100.972 18.7023 102.165 18.2685 103.033 17.4008C103.901 16.5332 104.334 15.3402 104.226 14.1471C104.226 14.0387 104.226 13.9302 104.226 13.8218C103.358 7.09745 97.719 2 91.3205 2C84.1629 2 78.3066 8.18201 78.3066 15.8824C78.3066 23.4744 84.1629 29.7649 91.3205 29.7649C95.4415 29.7649 98.5866 28.4634 100.647 27.0535C102.599 25.752 102.599 22.9321 100.647 21.6306C99.4542 20.8714 97.9359 20.8714 96.8514 21.6306C95.55 22.6067 94.2486 23.0406 92.0796 23.0406ZM91.2121 8.50739C95.4416 8.50739 96.3092 12.5203 96.3092 13.6049H86.5488C86.4403 10.8934 88.7177 8.50739 91.2121 8.50739Z" fill="#000000"></path></svg> </div>
+    <div class="p-4 border border-purple-300 rounded-lg mx-6">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" fill="none"><g clip-path="url(#clip0_7506_30027)"><path d="M37.3772 0.25H31.7662V0.75H33.2515V30.1667C33.2515 30.8333 33.0039 31 32.0963 31.0833H31.7662V31.5833H38.1199V31H37.4597C36.387 31 35.9745 30.5 35.9745 29.5833V17.75H37.7898C40.5128 17.75 41.998 16.4167 41.998 14.6667V3.5C42.0806 1.83333 40.7603 0.25 37.3772 0.25V0.25ZM39.3576 15.3333C39.3836 15.5805 39.3545 15.8305 39.2724 16.0648C39.1904 16.2992 39.0575 16.5121 38.8834 16.6878C38.7094 16.8636 38.4986 16.9978 38.2666 17.0807C38.0345 17.1635 37.787 17.1929 37.5423 17.1667H35.9745V0.75H37.3772C37.9011 0.754355 38.4023 0.966467 38.7728 1.3406C39.1432 1.71473 39.3533 2.22091 39.3576 2.75V15.3333ZM25.3301 29.5833L21.6994 0.25H19.3065L15.8409 29.3333C15.6758 30.4167 15.5108 31 13.8605 31.0833V31.5833H18.0688V31C16.8311 31 16.336 30.3333 16.4185 29.5833L17.8212 17.75H21.1218L22.6071 29.9167C22.6071 30.6667 22.5246 30.9167 21.6169 31H21.2043V31.5H26.8978V31H26.7328C26.5483 31.0011 26.3654 30.9652 26.1947 30.8944C26.024 30.8236 25.869 30.7193 25.7385 30.5875C25.608 30.4558 25.5047 30.2992 25.4346 30.1268C25.3645 29.9544 25.329 29.7697 25.3301 29.5833V29.5833ZM17.9863 17.25L19.4715 4.66667L21.1218 17.25H17.9863ZM7.5894 0.666667C7.5894 1.16667 7.25934 1.16667 7.0118 1C6.10115 0.396568 5.04674 0.0512055 3.95875 0C2.30846 0 -0.00195312 0.75 -0.00195312 3.91667V27.1667C-0.00195312 31.25 2.14343 32 4.2063 32C5.85659 32 6.59923 31.25 7.25934 31C7.5894 30.8333 8.00198 31.1667 8.00198 31.75H8.66209V17.8333H9.98233V17.25H4.2063V17.8333H5.85659V29.6667C5.86317 29.9022 5.82345 30.1368 5.73973 30.3568C5.656 30.5768 5.52992 30.7778 5.36879 30.9483C5.20766 31.1188 5.01467 31.2553 4.80097 31.35C4.58727 31.4447 4.35711 31.4957 4.12378 31.5C3.66557 31.4741 3.23577 31.2674 2.92706 30.9245C2.61835 30.5815 2.45545 30.1298 2.47349 29.6667V3C2.47349 2.25 2.63852 0.583333 3.87624 0.583333C4.86642 0.583333 5.60905 1.5 5.93911 2.91667C6.2951 5.09334 6.48818 7.29402 6.51671 9.5C6.51671 10 6.68174 10.1667 7.25934 10.1667H8.33204V0.25H7.5894V0.666667V0.666667Z" fill="#ffffff"></path></g><defs><clipPath id="clip0_7506_30027"><rect width="42" height="32" fill="white"></rect></clipPath></defs></svg> 
+    </div>
+    <div class="p-4 border border-purple-300 rounded-lg mx-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="112" height="32" viewBox="0 0 112 32" fill="none"><g clip-path="url(#clip0_7506_30030)"><path d="M9.99029 0.5H1.73323C1.41082 0.5 1.10161 0.625655 0.873636 0.84933C0.645655 1.073 0.517578 1.37636 0.517578 1.69268V30.8073C0.517578 31.1239 0.645569 31.4275 0.873474 31.6516C1.10138 31.8756 1.41058 32.0019 1.73323 32.0025H9.99029C14.2479 32.0025 18.3311 30.3432 21.3417 27.3895C24.3523 24.4358 26.0436 20.4297 26.0436 16.2525C26.0436 12.0754 24.3523 8.0693 21.3417 5.1156C18.3311 2.16192 14.2479 0.502555 9.99029 0.502555V0.5Z" fill="white"></path><path d="M33.7402 5.71289H38.0536C42.2576 5.71289 45.777 7.46744 45.777 12.1513C45.777 16.2938 42.3305 18.5182 38.4414 18.5182H33.7402V5.71289ZM36.6166 15.9132H38.1108C40.7816 15.9132 42.7964 14.9172 42.7964 12.0057C42.7964 9.49269 40.7504 8.31789 38.3191 8.31789H36.6218L36.6166 15.9132Z" fill="#FFFFFF"></path><path d="M48.2109 5.71289H57.0773V8.31789H51.0899V10.7058H56.7464V13.3082H51.0873V15.9132H57.4077V18.5182H48.2109V5.71289Z" fill="#FFFFFF"></path><path d="M60.0801 5.71289H63.9848L69.5349 14.6158H69.5711V5.71289H72.4347V18.5182H68.6888L63.0063 9.40329H62.9671V18.5182H60.1035L60.0801 5.71289Z" fill="#FFFFFF"></path><path d="M74.5508 5.71289H77.8461L81.0585 14.1051H81.0946L84.3747 5.71289H87.4542L82.0711 18.5182H79.7669L74.5508 5.71289Z" fill="#FFFFFF"></path><path d="M89.6543 5.71289H98.5206V8.31789H92.5332V10.7058H98.1923V13.3082H92.5307V15.9132H98.8536V18.5182H89.6543V5.71289Z" fill="#FFFFFF"></path><path d="M101.529 5.71289H106.582C109.253 5.71289 111.502 6.61699 111.502 9.60249C111.502 11.3902 110.526 12.7847 108.683 13.109L111.999 18.5182H108.558L105.83 13.4104H104.411V18.5182H101.529V5.71289ZM104.406 11.0123H106.1C107.142 11.0123 108.516 10.9765 108.516 9.58464C108.516 8.30769 107.337 8.10079 106.285 8.10079H104.406V11.0123Z" fill="#FFFFFF"></path><path d="M35.4095 24.0645H33.8789V23.043H38.122V24.0645H36.581V28.3015H35.4095V24.0645Z" fill="#FFFFFF"></path><path d="M38.8672 23.0293H40.049V24.9907H42.3449V23.0293H43.5267V28.2904H42.3449V26.0174H40.049V28.2904H38.8672V23.0293Z" fill="#FFFFFF"></path><path d="M44.5078 23.0293H48.1522V24.0994H45.6897V25.0877H48.0168V26.1578H45.6897V27.2279H48.2928V28.298H44.5078V23.0293Z" fill="#FFFFFF"></path><path d="M51.7773 23.0293H53.5658L54.8024 26.4617H54.8181L56.0598 23.0293H57.8401V28.2904H56.6585V24.2552H56.6427L55.2346 28.2904H54.3309L52.9747 24.2552H52.9595V28.2904H51.7773V23.0293Z" fill="#FFFFFF"></path><path d="M58.9141 23.0293H60.0957V28.2904H58.9141V23.0293Z" fill="#FFFFFF"></path><path d="M61.2261 23.0293H62.4077V27.2203H64.5973V28.2904H61.2129L61.2261 23.0293Z" fill="#FFFFFF"></path><path d="M65.4453 23.0293H69.0894V24.0994H66.6269V25.0877H68.954V26.1578H66.6269V27.2279H69.2299V28.298H65.4453V23.0293Z" fill="#FFFFFF"></path><path d="M72.7188 23.0293H73.9003V24.9907H76.1963V23.0293H77.3785V28.2904H76.1963V26.0174H73.9003V28.2904H72.7188V23.0293Z" fill="#FFFFFF"></path><path d="M78.4512 23.0293H79.6333V28.2904H78.4512V23.0293Z" fill="#FFFFFF"></path><path d="M85.7181 27.9194C85.0206 28.2657 84.2478 28.441 83.4664 28.4302C81.7925 28.4302 80.5742 27.3525 80.5742 25.6643C80.5742 23.9762 81.7925 22.8984 83.4664 22.8984C84.315 22.8984 85.0644 23.0849 85.6035 23.5752L84.7707 24.4665C84.6047 24.293 84.4026 24.1573 84.1776 24.0691C83.9525 23.9808 83.7107 23.9421 83.4689 23.9558C82.4614 23.9558 81.8027 24.6708 81.8027 25.6516C81.8027 26.6323 82.4614 27.3473 83.4689 27.3473C83.8563 27.3545 84.2392 27.2667 84.5828 27.092V26.2364H83.6227V25.1663H85.7206L85.7181 27.9194Z" fill="#FFFFFF"></path><path d="M86.7539 23.0293H87.9355V24.9907H90.2315V23.0293H91.4131V28.2904H90.2315V26.0174H87.9355V28.2904H86.7539V23.0293Z" fill="#FFFFFF"></path><path d="M98.5594 24.396C98.4346 24.2532 98.2783 24.1401 98.1027 24.0653C97.9266 23.9905 97.7356 23.956 97.5442 23.9644C96.6513 23.9644 95.9823 24.6795 95.9823 25.6602C95.9823 26.6409 96.6411 27.356 97.4974 27.356C97.7158 27.3617 97.9317 27.3126 98.1256 27.2134C98.3191 27.1141 98.4835 26.9681 98.6037 26.789L99.5877 27.5118C99.3622 27.8051 99.0684 28.0412 98.7314 28.2003C98.3939 28.3594 98.0223 28.4368 97.6481 28.4261C95.9747 28.4261 94.7539 27.3483 94.7539 25.6602C94.7539 23.9721 95.9747 22.8943 97.6481 22.8943C97.9912 22.8811 98.3323 22.943 98.6474 23.0755C98.9626 23.2081 99.2441 23.4079 99.4706 23.6605L98.5594 24.396Z" fill="#FFFFFF"></path><path d="M100.377 23.0293H101.559V28.2904H100.377V23.0293Z" fill="#FFFFFF"></path><path d="M103.822 24.0645H102.291V23.043H106.534V24.0645H105.003V28.3015H103.822V24.0645Z" fill="#FFFFFF"></path><path d="M108.756 26.0455L106.736 23.0293H108.205L109.342 24.9984L110.547 23.0293H111.942L109.928 26.0455V28.2904H108.746L108.756 26.0455Z" fill="#FFFFFF"></path><path d="M16.0539 10.6249L20.0835 8.47196C20.1435 8.44036 20.2129 8.43101 20.2794 8.44551C20.3458 8.46006 20.4047 8.49751 20.4453 8.55111C20.4805 8.59591 20.5005 8.65036 20.5026 8.70691C20.5036 8.74451 20.497 8.78191 20.4832 8.81701C20.4693 8.85211 20.4485 8.88411 20.4219 8.91121L17.1914 12.1164C17.2851 12.2722 17.371 12.4305 17.4517 12.5914L24.0792 10.9314C23.064 8.35321 21.338 6.10286 19.0943 4.43164C18.1442 6.01761 16.5485 8.67626 15.627 10.2163C15.7754 10.3465 15.9159 10.4844 16.0539 10.6249Z" fill="#FFFFFF"></path><path d="M10.5565 5.35312V8.06792C10.9221 8.09277 11.2856 8.14142 11.6446 8.21347L13.6906 4.18597C13.7215 4.12622 13.773 4.07923 13.836 4.05348C13.899 4.02773 13.9693 4.0249 14.0343 4.0455C14.0895 4.06306 14.1378 4.09712 14.1723 4.14291C14.2068 4.1887 14.2259 4.24394 14.2269 4.30089C14.2281 4.3196 14.2281 4.33837 14.2269 4.35708C14.2269 4.35708 13.7635 7.02847 13.446 8.79322C13.6204 8.87242 13.7895 8.95667 13.9666 9.04862L18.4179 3.96122C16.0862 2.35906 13.3146 1.48736 10.468 1.46094H8.72653H8.64844C8.7976 1.58195 8.94015 1.71068 9.07536 1.84658C9.54607 2.3061 9.91933 2.85258 10.1736 3.45444C10.4278 4.0563 10.5579 4.70161 10.5565 5.35312Z" fill="#FFFFFF"></path><path d="M25.0831 15.7491C25.0359 14.3735 24.7931 13.011 24.3621 11.7012L18.1406 14.4875C18.1849 14.6816 18.2213 14.8757 18.25 15.0749L22.8158 15.5857C22.8825 15.5942 22.9439 15.6258 22.9892 15.6747C23.0343 15.7236 23.0603 15.7866 23.0625 15.8526C23.0647 15.9186 23.0429 15.9832 23.0011 16.0348C22.9592 16.0865 22.9 16.1219 22.834 16.1347L18.3098 16.9418C18.2889 17.2108 18.2532 17.4785 18.2031 17.7437L24.5104 20.3206C24.9171 18.8303 25.1099 17.2917 25.0831 15.7491Z" fill="#FFFFFF"></path><path d="M10.5332 9.16992V18.0294L11.426 17.0717C11.6941 16.7814 12.0669 16.6048 12.4654 16.5795C12.8638 16.5543 13.2567 16.6823 13.5606 16.9364L16.0257 18.9795L17.0253 17.8558C17.2577 16.8599 17.2688 15.8266 17.058 14.8261C16.8471 13.8256 16.4191 12.8813 15.8032 12.0575C15.1873 11.2337 14.3978 10.5497 13.4885 10.0519C12.5791 9.55402 11.5712 9.25412 10.5332 9.17247V9.16992Z" fill="#FFFFFF"></path><path d="M18.064 18.8517H18.0484C17.9735 18.8253 17.8923 18.8206 17.8148 18.8383C17.7372 18.856 17.6665 18.8952 17.611 18.9513C17.611 18.9513 16.5256 20.1747 16.1351 20.5756C15.6379 20.1593 12.8343 17.8302 12.8343 17.8302C12.7531 17.7622 12.6479 17.7282 12.5414 17.7353C12.4348 17.7425 12.3354 17.7903 12.2643 17.8685L10.6426 19.6077C10.5725 19.6821 10.5334 19.7796 10.5332 19.881V30.6508C10.5331 30.7167 10.5493 30.7817 10.5806 30.84C10.6119 30.8983 10.6573 30.9483 10.7129 30.9854C10.7832 31.0326 10.8673 31.0559 10.9523 31.0518H11.0096C13.9057 30.8507 16.6817 29.8369 19.007 28.1311C21.3321 26.4254 23.1084 24.0997 24.124 21.4312L18.064 18.8517Z" fill="#FFFFFF"></path><path d="M5.49152 1.43945H1.78212C1.74681 1.43941 1.71186 1.44641 1.6794 1.46004C1.64694 1.47366 1.61764 1.49363 1.59329 1.51871C1.56894 1.5438 1.55005 1.57348 1.53776 1.60595C1.52547 1.63843 1.52004 1.67302 1.52181 1.70761V30.789C1.5217 30.8582 1.54861 30.9249 1.59703 30.9753C1.64544 31.0256 1.71168 31.0558 1.78212 31.0597H9.20356C9.27651 31.0591 9.34631 31.0303 9.39793 30.9797C9.4495 30.9291 9.47883 30.8606 9.47949 30.789V5.35205C9.47949 4.31437 9.05933 3.31918 8.31143 2.58543C7.56357 1.85167 6.54921 1.43945 5.49152 1.43945ZM4.54661 21.2553H3.12792V19.7996H4.55442L4.54661 21.2553ZM4.54661 17.4883H3.12792V16.03H4.55442L4.54661 17.4883ZM4.54661 13.7187H3.12792V12.2604H4.55442L4.54661 13.7187ZM4.54661 9.9491H3.12792V8.4857H4.55442L4.54661 9.9491ZM4.54661 6.21525H3.12792V4.75699H4.55442L4.54661 6.21525ZM7.86557 21.2553H6.43909V19.7996H7.86557V21.2553ZM7.86557 17.4883H6.43909V16.03H7.86557V17.4883ZM7.86557 13.7187H6.43909V12.2604H7.86557V13.7187ZM7.86557 9.9491H6.43909V8.4857H7.86557V9.9491ZM7.86557 6.1463H6.43909V4.68803H7.86557V6.1463Z" fill="#FFFFFF"></path></g><defs><clipPath id="clip0_7506_30030"><rect width="112" height="32" fill="white"></rect></clipPath></defs></svg> 
+    </div>
+    <div class="p-4 border border-purple-300 rounded-lg mx-6">
+      <svg xmlns="http://www.w3.org/2000/svg" width="142" height="32" viewBox="0 0 142 32" fill="none"><g clip-path="url(#clip0_7506_30075)"><path d="M88.1406 16.0003C88.1406 15.5203 88.2206 15.0403 88.3807 14.5603C88.5407 14.0803 88.8607 13.6803 89.1808 13.3603C89.5008 13.0403 89.9809 12.7203 90.3809 12.5603C90.861 12.4003 91.341 12.3203 91.8211 12.3203C92.3812 12.3203 93.0213 12.4803 93.5013 12.7203C94.0614 13.0403 94.4614 13.4403 94.7815 13.9203L93.7414 14.4803C93.5813 14.1603 93.2613 13.9203 92.9413 13.6803C92.6212 13.5203 92.2212 13.3603 91.9011 13.4403C91.261 13.4403 90.6209 13.7603 90.1409 14.2403C89.6608 14.7203 89.4208 15.3603 89.5008 16.0003C89.5008 16.3203 89.5808 16.6403 89.6608 16.9603C89.7408 17.2803 89.9809 17.5203 90.2209 17.7603C90.4609 18.0003 90.701 18.1603 91.021 18.3203C91.341 18.4803 91.6611 18.5603 91.9811 18.5603C92.3812 18.5603 92.7012 18.4803 93.0213 18.3203C93.3413 18.1603 93.5813 17.8403 93.8214 17.5203L94.8615 18.0803C94.5415 18.5603 94.1414 18.9603 93.5813 19.2803C93.1013 19.6003 92.4612 19.6803 91.9011 19.6803C91.4211 19.6803 90.941 19.6003 90.4609 19.4403C89.9809 19.2803 89.5808 18.9603 89.2608 18.6403C88.9407 18.3203 88.6207 17.8403 88.4607 17.4403C88.2206 16.9603 88.1406 16.4803 88.1406 16.0003Z" fill="#FFFFFF"></path><path d="M100.46 18.2404H97.0999L96.5399 19.6004H95.1797L97.9801 12.4004H99.5803L102.381 19.6004H101.02L100.46 18.2404ZM97.42 17.1204H100.14L98.7802 13.4404C98.7001 13.4404 97.42 17.1204 97.42 17.1204Z" fill="#FFFFFF"></path><path d="M104.462 14.3204V19.6004H103.182V12.4004H104.462L108.142 17.5204V12.4004H109.422V19.6004H108.222L104.462 14.3204Z" fill="#FFFFFF"></path><path d="M115.505 18.2404H112.145L111.585 19.6004H110.225L113.025 12.4004H114.625L117.426 19.6004H116.065L115.505 18.2404ZM112.465 17.1204H115.185L113.825 13.4404L112.465 17.1204Z" fill="#FFFFFF"></path><path d="M118.303 12.4005H120.943C121.423 12.3205 121.903 12.4005 122.383 12.5605C122.863 12.7205 123.263 12.9605 123.663 13.3605C123.983 13.6805 124.304 14.0805 124.464 14.5605C124.624 15.0405 124.704 15.5205 124.704 16.0005C124.704 16.4805 124.624 16.9605 124.464 17.4405C124.304 17.9205 123.983 18.3205 123.663 18.6405C123.343 18.9605 122.863 19.2805 122.383 19.4405C121.903 19.6005 121.423 19.6805 120.943 19.6005H118.303V12.4005ZM120.943 18.4805C121.263 18.4805 121.583 18.4805 121.903 18.3205C122.223 18.1605 122.463 18.0005 122.703 17.7605C122.943 17.5205 123.103 17.2805 123.263 16.9605C123.343 16.6405 123.423 16.3205 123.423 16.0005C123.423 15.6805 123.423 15.3605 123.263 15.0405C123.103 14.7205 122.943 14.4805 122.703 14.2405C122.463 14.0005 122.223 13.8405 121.903 13.6805C121.583 13.5205 121.263 13.5205 120.943 13.5205H119.503V18.4805H120.943Z" fill="#FFFFFF"></path><path d="M130.226 18.2404H126.785L126.225 19.6004H124.865L127.666 12.4004H129.266L132.066 19.6004H130.706L130.226 18.2404ZM127.106 17.1204H129.826L128.466 13.4404L127.106 17.1204Z" fill="#FFFFFF"></path><path d="M22.5592 11.5193C23.7594 11.4393 24.9595 10.8793 25.7596 9.9993C26.5597 9.1193 27.0398 7.8393 26.9598 6.6393C26.9598 3.5993 24.1594 1.2793 20.879 1.2793H9.4375L10.2376 3.1193V22.1593L14.7982 18.9593V13.4393H17.5186C21.9991 13.4393 24.2394 14.3993 24.2394 17.0393C24.2394 19.3593 22.3992 20.3193 19.5988 20.3193H15.1983L10.2376 23.7593H19.5188C25.0395 23.7593 28.8 21.7593 28.8 17.1193C28.8 13.1193 25.5196 11.5193 22.5592 11.5193ZM18.3987 10.3993H14.7982V4.7993H19.5988C20.879 4.7993 22.5592 5.1193 22.5592 7.3593C22.5592 9.5993 20.1589 10.3993 18.3987 10.3993Z" fill="#FFFFFF"></path><path d="M40.6402 1.2793H30.8789L31.679 3.1193V22.1593L36.2396 18.9593V4.7993H39.28C40.5602 4.7993 47.041 5.1193 47.041 12.5593C47.041 21.0393 39.28 20.3193 39.28 20.3193H36.6397L31.679 23.7593H40.5602C46.0809 23.7593 51.7616 20.3193 51.7616 12.4793C51.8416 5.5993 46.881 1.2793 40.6402 1.2793Z" fill="#FFFFFF"></path><path d="M65.9216 1.11914C61.2009 1.11914 54 3.59914 54 12.5591C54 21.5191 61.2009 23.9991 65.9216 23.9991C70.6422 23.9991 77.8431 21.5191 77.8431 12.4791C77.8431 3.43914 70.5622 1.11914 65.9216 1.11914ZM65.9216 20.7191C63.1212 20.7191 58.7206 18.9591 58.7206 12.5591C58.7206 6.15914 63.1212 4.39914 65.9216 4.39914C68.7219 4.39914 73.1225 6.15914 73.1225 12.5591C73.1225 18.9591 68.7219 20.7191 65.9216 20.7191Z" fill="#FFFFFF"></path><path d="M0.0761719 1.2793V29.2793L4.47675 26.1593V1.2793H0.0761719Z" fill="#FFFFFF"></path><path d="M5.27678 27.2793L-0.00390625 30.9593H77.6062V27.2793H5.27678Z" fill="#FFFFFF"></path></g><defs><clipPath id="clip0_7506_30075"><rect width="141.538" height="32" fill="white"></rect></clipPath></defs></svg> 
+    </div>
+  </div>
+  <div class="mx-auto max-w-5xl flex flex-row px-6 lg:px-8">
+    <div class="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
+      <div class="-my-12 divide-y divide-white">
+        <div class="el flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
+          <img class="h-12 self-start" src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg" alt="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" fill="#fff085"/></svg>
+          <figure class="mt-5 flex flex-auto flex-col">
+
+            <blockquote class="text-3xl leading-12 text-white  rounded-lg italic flex items-start">
+              <p>We are very pleased with the roll-out of AiseraGPT and are looking forward to expanding our footprint and capabilities with Aisera.</p>
+            </blockquote>
+            <figcaption class="mt-10 flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white text-xl">Jason Wilk</div>
+                <div class="mt-1 text-gray-300 text-lg">CEO and Founder, Dave</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <img src="https://ik.imagekit.io/dumani/test-tailwind-ui/chat-ai-testimonial_HCWKY4osZ.png" style="box-shadow: 0 0 50px 10px var(--color-yellow-100);     border-radius: 1em;" alt="">
+  </div>
+</section>
+
+<section id="features" class="pt-24 pb-32 relative isolate bg-violet-100">
+  <div class="absolute hidden inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#38bdf8] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div> 
+    </div>
+  <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#38bdf8] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% .1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, .1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+  <div class="el mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl sm:text-center mb-16">
+      <p class="text-2xl font-semibold leading-7 text-violet-800 hidden">Supercharge your Workforce with AI Agents</p>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-violet-900 sm:text-4xl">Aisera Advantages</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600 hidden">Seamlessly deploy Cloud Agents and add users to measure, communicate, and eliminate cyber risk across the extended enterprise.</p>
+    </div>
+  </div>
+
+  <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+    <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-10 gap-y-10 text-lg leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-10 lg:gap-y-16">
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+          </svg>
+          Agentic Orchestration and Reasoning Engine
+        </dt>
+        <dd class="inline">Enhance task accuracy with specialized agents tuned to each department’s needs
+        </dd>
+      </div>
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+          </svg>
+          Agentic Dynamic Flows
+        </dt>
+        <dd class="inline">Reduce development times and maintenance overhead by enabling self-service user actions
+        </dd>
+      </div>
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z" clip-rule="evenodd" />
+          </svg>
+          Universal AI Copilot
+        </dt>
+        <dd class="inline">Provide a unified interface for interacting with AI agents across the enterprise
+        </dd>
+      </div>
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+          </svg>
+          Domain-specific LLMs
+        </dt>
+        <dd class="inline">Reduce hallucinations and increase the accuracy of AI agent responses across IT, HR, Sales, and more
+        </dd>
+      </div>
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+          </svg>
+          Intentless Conversational AI
+        </dt>
+        <dd class="inline">Understand and respond to complex user requests in real-time, fostering a natural and intuitive conversational experience
+        </dd>
+      </div>
+      <div class="el relative pl-9">
+        <dt class=" font-semibold text-gray-900">
+          <svg class="absolute -left-3 top-1 h-10 w-10 text-violet-800" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z" clip-rule="evenodd" />
+          </svg>
+          Proactive Prediction and Major Incident Detection
+        </dt>
+        <dd class="inline">Prevent revenue loss and reduce resolution times by proactively detecting and resolving major incidents and outages
+        </dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section id="news" class="bg-violet-800 pt-24 pb-24 sm:pb-32 relative" style="background-image: radial-gradient(circle at 100% 100%, #f6cfff, #67e2fe00 50%), radial-gradient(circle at 0 0, #a366ff80, #a366ff00 50%);  background-color: #140033;">
+
+  <div class="el mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl sm:text-center mb-8">
+      <p class="text-2xl font-semibold leading-7 text-yellow-200 hidden">Supercharge your Workforce with AI Agents</p>
+      <h2 class="mx-auto max-w-3xl mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A Single Integrated Platform for all Business Functions</h2>
+      <p class="mt-6 text-lg leading-8 text-white ">Revolutionize employee experience with autonomous AI agents that get work done across multiple domains.</p>
+    </div>
+  </div>
+  <div class="mx-auto max-w-5xl flex flex-row flex-wrap pb-6 justify-center text-white font-semibold function">    
+    <div class="button one-flash text-center min-w-[285px] px-4 py-2 bg-purple-300 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">IT </div>
+    <div class="button one-flash text-center min-w-[285px] px-4 py-2 bg-purple-300 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">HR</div>
+    <div class="button one-flash text-center min-w-[285px] px-4 py-2 bg-purple-300 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">LEGAL</div>
+    <div class="button one-flash text-center min-w-[285px] px-4 py-2 bg-purple-300 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">SALES</div>
+    <div class="button one-flash text-center min-w-[285px] px-4 py-2 bg-purple-300 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">MARKETING</div>
+    <div class="button one-flash text-center min-w-[285px] px-4 py-2 bg-yellow-200 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">PROCUREMENT & SUPPLY CHAIN</div>
+  </div>
+  <div class="flex flex-row items-center justify-center mb-6 mt-0"> <a href="#" class="font-base leading-6 text-[#FF5D5F] text-lg mr-2" aria-describedby="featured-post">Learn More</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+    <path d="M12.5309 5.14V4.36C12.3042 4.33333 12.0909 4.29333 11.8909 4.24C11.6909 4.18667 11.4842 4.11333 11.2709 4.02C11.0575 3.92667 10.8575 3.82667 10.6709 3.72C10.4842 3.6 10.2975 3.44667 10.1109 3.26L8.17086 1.34L9.41086 0.14L15.2509 6L9.41086 11.88L8.17086 10.66L10.0309 8.82C10.2575 8.60667 10.4775 8.43333 10.6909 8.3C10.9042 8.16667 11.1175 8.06 11.3309 7.98C11.5309 7.9 11.7309 7.83333 11.9309 7.78C12.1309 7.71333 12.3309 7.67333 12.5309 7.66V6.88L0.0308594 6.88L0.0308594 5.14L12.5309 5.14Z" fill="#FF5D5F"></path>
+  </svg> </div>
+
+  <div class="mx-auto max-w-5xl el sm:px-6 lg:px-0">
+    <div class="relative isolate overflow-hidden bg-violet-500 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
+      <div class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-violet-100 opacity-20 ring-1 ring-inset ring-white" aria-hidden="true"></div>
+      <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
+        <img src="https://ik.imagekit.io/dumani/test-tailwind-ui/ai-chat_cm5A0TDLE.png" alt="Product screenshot" width="2432" height="1442" class="-mb-12 w-[57rem] max-w-none rounded-t-xl bg-gray-800 ring-1 ring-white/10">
+      </div>
+      <div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-3xl" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="de-risk" class="hidden overflow-hidden bg-violet-800 py-24 sm:py-32" style="background-image: radial-gradient(circle at 100% 100%, rgba(125463, 102, 255, 0.5), rgba(163, 102, 255, 0) 50%), radial-gradient(circle at 0px 0px, rgba(77, 23, 154, 0.5), rgba(77, 23, 154, 0) 50%);">
+  <div class="el mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl sm:text-center mb-16">
+      <h2 class="text-lg font-semibold leading-7 text-violet-800 hidden">Supercharge your Workforce with AI Agents</h2>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A Single Integrated Platform for all Business Functions</p>
+      <p class="mt-6 text-lg leading-8 text-white ">Revolutionize employee experience with autonomous AI agents that get work done across multiple domains.</p>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+      <div class="el px-6 lg:px-0 lg:pr-4 lg:pt-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">		
+          <div class="mx-auto max-w-5xl flex flex-col pb-12 text-white font-semibold">
+
+            <dt class="font-semibold text-white flex flex-row items-center">
+              <svg class="h-10 w-10 text-amber-200 mr-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+              </svg>
+              IT
+            </dt>  
+
+            <dt class="font-semibold text-white flex flex-row items-center">
+              <svg class="h-10 w-10 text-amber-200 mr-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+              </svg>
+              HR
+            </dt> 
+            <dt class="font-semibold text-white flex flex-row items-center">
+              <svg class="h-10 w-10 text-amber-200 mr-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+              </svg>
+              LEGAL
+            </dt> 
+            <dt class="font-semibold text-white flex flex-row items-center">
+              <svg class="h-10 w-10 text-amber-200 mr-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+              </svg>
+              SALES
+            </dt> 
+            <dt class="font-semibold text-white flex flex-row items-center">
+              <svg class="h-10 w-10 text-amber-200 mr-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+              </svg>
+              MARKETING
+            </dt> 
+            <dt class="font-semibold text-white flex flex-row items-center">
+              <svg class="h-10 w-10 text-amber-200 mr-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+              </svg>
+              PROCUREMENT & SUPPLY CHAIN
+            </dt>
+          </div>
+
+		      <a href=""><button type="button" class="button rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-violet-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Learn More</button></a>
+
+
+        </div>
+      </div>
+      <div class="el sm:px-6 lg:px-0">
+        <div class="relative isolate overflow-hidden bg-violet-500 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
+          <div class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-violet-100 opacity-20 ring-1 ring-inset ring-white" aria-hidden="true"></div>
+          <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
+            <img src="https://ik.imagekit.io/dumani/test-tailwind-ui/csam-dashboard2_nuwfwj6nhJ.jpg?updatedAt=1718291685166" alt="Product screenshot" width="2432" height="1442" class="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10">
+          </div>
+          <div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-3xl" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apps" class="hidden bg-white pt-32 pb-48 bg-gradient-to-b from-blue-50 to-#ffffff">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 relative">
+      <div class="el">
+        <h2 class="text-base font-semibold leading-7 text-blue-500">Everything you need</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">20+ powerful cloud apps seamlessly integrated in a single, unified platform</p>
+        <p class="my-6 text-base leading-7 text-gray-600">No more navigating through a complex maze of risk data from disparate security tools. Enterprise TruRisk Platform apps are fully integrated and natively share the data they collect so you can articulate the financial impact of your security posture in real time.</p>
+        <a href="#"><button  class="button rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-violet-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Learn More</button></a>
+      </div>
+    
+      <div class="el col-span-2 text-base leading-7 text-gray-600 flex flex-wrap z-10">
+        <div class="w-[48%]">
+          <div class="relative pl-9 mb-8">
+            <dt class="font-semibold text-gray-900 mb-4 flex flex-nowrap content-center items-start leading-snug uppercase">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="max-h-[23px] mr-2"><!-- https://fontawesome.com/icons/share-nodes?f=classic&s=solid --><path fill="#dc2626" d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"/></svg> Asset Management
+            </dt>
+            <div class="app flex gap-2 mb-4 relative">
+            <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+              CSAM
+            </div>
+            <a href="#" class="mt-[8px] leading-normal tooltip">CyberSecurity Attack Surface Management <span class="tooltiptext">Identify cyber risk across your entire attack surface and slash remediation time by 50% with a one-click VM workflow that gives you complete visibility of internal and external internet-facing assets.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+            <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+              EASM
+            </div>
+            <a href="#" class="mt-[8px] leading-normal tooltip">External Attack Surface Management <span class="tooltiptext">Continuously discover unknowns, monitor cyber risk, and discover 30% more enterprise assets from mergers, acquisitions and subsidiaries, and other unknowns to slam the window on potential hackers.</span>  </a>
+            </div>
+          </div>
+          <div class="relative pl-9 mb-8">
+            <dt class="font-semibold text-gray-900 mb-4 flex flex-nowrap content-center items-start leading-snug uppercase">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="max-h-[26px] mr-2"><!-- https://fontawesome.com/icons/virus?f=classic&s=solid --><path fill="#dc2626" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V43.5c0 49.9-60.3 74.9-95.6 39.6L120.2 75C107.7 62.5 87.5 62.5 75 75s-12.5 32.8 0 45.3l8.2 8.2C118.4 163.7 93.4 224 43.5 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H43.5c49.9 0 74.9 60.3 39.6 95.6L75 391.8c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l8.2-8.2c35.3-35.3 95.6-10.3 95.6 39.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V468.5c0-49.9 60.3-74.9 95.6-39.6l8.2 8.2c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-8.2-8.2c-35.3-35.3-10.3-95.6 39.6-95.6H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H468.5c-49.9 0-74.9-60.3-39.6-95.6l8.2-8.2c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-8.2 8.2C348.3 118.4 288 93.4 288 43.5V32zM176 224a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm128 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg> Vulnerability & Configuration Management
+
+            </dt>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                VMDR
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Vulnerability Management, Detection, and Response <span class="tooltiptext">Discover, assess, prioritize, and de-risk your business up to 40% faster, with the world’s #1, enterprise-grade, risk-based approach to vulnerability management.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                ETM
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Enterprise TruRisk Management <span class="tooltiptext">Everything you need to measure, manage, and reduce your cyber risk in one place</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                WAS
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Web App Scanning <span class="tooltiptext">Reduce your attack surface and risks for modern web apps and APIs across any cloud-native or on-premises architecture.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                CWP
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Cloud Workload Protection <span class="tooltiptext">A real-time AI CNAPP solution that provides extensive visibility of your cyber risk exposure to simplify prioritization of vulnerabilities based on context and business risk across your multi-cloud environment. </span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                KCS
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Kubernetes and Container Security <span class="tooltiptext">Gain deep visibility and security across on-premises container environments and managed containers across multiple cloud providers.</span></a>
+            </div>
+          </div>
+          <div class="relative pl-9 mb-8">
+            <dt class="font-semibold text-gray-900 mb-4 flex flex-nowrap content-center items-start leading-snug uppercase">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="max-h-[23px] mr-2"><!-- https://fontawesome.com/icons/screwdriver-wrench?f=classic&s=solid --><path fill="#dc2626" d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg> Risk Remediation
+            </dt>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                PM
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Patch Management <span class="tooltiptext">Streamline and accelerate vulnerability remediation for all your IT assets with a risk-based approach bridging the gap between IT and security to remediate vulnerabilities at warp speed.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                CAR
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Custom Assessment and Remediation <span class="tooltiptext">Create your own detection and remediation scripts and custom logic to remediate nearly any risk scenario for any attack surface and application leveraging the familiar VMDR interface.</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="w-[48%]">
+          <div class="relative pl-9 mb-8">
+            <dt class="font-semibold text-gray-900 mb-4 flex flex-nowrap content-center items-start leading-snug uppercase">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="max-h-[23px] mr-2"><!-- https://fontawesome.com/icons/user-secret?f=classic&s=solid --><path fill="#dc2626" d="M224 16c-6.7 0-10.8-2.8-15.5-6.1C201.9 5.4 194 0 176 0c-30.5 0-52 43.7-66 89.4C62.7 98.1 32 112.2 32 128c0 14.3 25 27.1 64.6 35.9c-.4 4-.6 8-.6 12.1c0 17 3.3 33.2 9.3 48H45.4C38 224 32 230 32 237.4c0 1.7 .3 3.4 1 5l38.8 96.9C28.2 371.8 0 423.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-58.5-28.2-110.4-71.7-143L415 242.4c.6-1.6 1-3.3 1-5c0-7.4-6-13.4-13.4-13.4H342.7c6-14.8 9.3-31 9.3-48c0-4.1-.2-8.1-.6-12.1C391 155.1 416 142.3 416 128c0-15.8-30.7-29.9-78-38.6C324 43.7 302.5 0 272 0c-18 0-25.9 5.4-32.5 9.9c-4.8 3.3-8.8 6.1-15.5 6.1zm56 208H267.6c-16.5 0-31.1-10.6-36.3-26.2c-2.3-7-12.2-7-14.5 0c-5.2 15.6-19.9 26.2-36.3 26.2H168c-22.1 0-40-17.9-40-40V169.6c28.2 4.1 61 6.4 96 6.4s67.8-2.3 96-6.4V184c0 22.1-17.9 40-40 40zm-88 96l16 32L176 480 128 288l64 32zm128-32L272 480 240 352l16-32 64-32z"/></svg> Threat Detection & Response
+            </dt>
+            <div class="app flex gap-2 mb-4 relative">
+            <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+              EDR
+            </div>
+            <a href="#" class="mt-[8px] leading-normal tooltip">Multi-Vector EDR <span class="tooltiptext">Monitor endpoints for suspicious activity in real time, hunt for sophisticated threat actors across your environment, and act quickly with automated response workflows and threat forensics.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                XDR
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Context XDR <span class="tooltiptext">Bring context and clarity to your enterprise security operations through a risk-focused, single-pane-of-glass solution for enterprise threat detection and incident response.</span></a>
+            </div>
+          </div>
+          <div class="relative pl-9 mb-8">
+            <dt class="font-semibold text-gray-900 mb-4 flex flex-nowrap content-center items-start leading-snug uppercase">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="max-h-[23px] mr-2"><!-- https://fontawesome.com/icons/scale-balanced?f=classic&s=solid --><path fill="#dc2626" d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg> Compliance
+            </dt>
+            <div class="app flex gap-2 mb-4 relative">
+            <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+              PC
+            </div>
+            <a href="#" class="mt-[8px] leading-normal tooltip">Policy Compliance <span class="tooltiptext">Go beyond vulnerability management and security configuration to reduce security breach and compliance risks with a single cloud solution, multiple sensors, a robust policy library, and seamless integration.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                FIM
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">File Integrity Monitoring <span class="tooltiptext">Monitor integrity violations across global IT systems in real time to detect and identify critical changes, incidents, and risks of normal and malicious events.</span></a>
+            </div>
+          </div>
+          <div class="relative pl-9">
+            <dt class="font-semibold text-gray-900 mb-4 flex flex-nowrap content-center items-start leading-snug uppercase">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="max-h-[23px] mr-2"><!-- https://fontawesome.com/icons/cloud?f=classic&s=solid --><path fill="#dc2626" d="M0 336c0 79.5 64.5 144 144 144H512c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z"/></svg> Cloud Security
+            </dt>
+            <div class="app flex gap-2 mb-4 relative">
+            <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+              CNAPP
+            </div>
+            <a href="#" class="mt-[8px] leading-normal tooltip">TotalCloud <span class="tooltiptext">The AI-powered Cloud-native Application Protection Platform (CNAPP) for cloud infrastructure and SaaS environments.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                CSPM
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Cloud Security Posture Management <span class="tooltiptext">Continuously discover, monitor, and analyze your cloud assets for misconfigurations and non-standard deployments to take timely and appropriate action.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                IaC
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Infrastructure as Code Security <span class="tooltiptext">Address potential security threats to your cloud infrastructure by detecting and remediating security problems within IaC templates.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="app flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                SSPM
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">SaaS Security Posture Management <span class="tooltiptext">Automate the entire process of managing your SaaS apps, including global settings, user privileges, licenses, files, and their security and compliance posture.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                CWP
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Cloud Workload Protection <span class="tooltiptext">A real-time AI CNAPP solution that provides extensive visibility of your cyber risk exposure to simplify prioritization of vulnerabilities based on context and business risk across your multi-cloud environment. </span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="app flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                CDR
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Cloud Detection and Response <span class="tooltiptext">An integral part of Qualys TotalCloud that provides continuous, real-time protection of your multi-cloud environment against active exploitation, malware, and unknow threats.</span></a>
+            </div>
+            <div class="app flex gap-2 mb-4 relative">
+              <div class="app flex items-center place-content-center app-badge inline-block rounded-tl-lg rounded-tr-lg rounded-bl-lg  bg-blue-800 border-blue-500 text-sm text-white font-semibold border-2 min-w-[65px] min-h-[40px] max-w-[65px] max-h-[40px]">
+                KCS
+              </div>
+              <a href="#" class="mt-[8px] leading-normal tooltip">Kubernetes and Container Security <span class="tooltiptext">Gain deep visibility and security across on-premises container environments and managed containers across multiple cloud providers.</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="absolute bottom-0 -mb-48 w-[700px]" src="https://ik.imagekit.io/dumani/test-tailwind-ui/cloud_fZnpbdLNm.png?updatedAt=1718387511894" alt="cloud">
+    </div>
+  </div>
+</section>
+
+<section id="stats" class="hidden bg-[#025EC4] py-24 sm:py-32 bg-cover bg-bottom" style="background-image: url('https://ik.imagekit.io/dumani/test-tailwind-ui/bar-chart-light-blue_1Xu8IrmRv.svg?updatedAt=1720461415622');">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div class="text-left">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl drop-shadow-md">Enterprise TruRisk Platform in numbers</h2>
+        <p class="mt-4 text-lg leading-8 text-gray-50 drop-shadow-md">Lorem ipsum dolor sit amet consect adipisicing possimus.</p>
+      </div>
+      <dl class="mt-16 grid grid-cols-1 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-6 border-white border">
+        <div class="el flex flex-col bg-blue-900 p-8 border-r-white border-r">
+          <dt class="text-sm font-normal leading-6 text-gray-50">Data points indexed elastic search clusters</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-blue-300">9+
+trillion</dd>
+        </div>
+        <div class="el flex flex-col bg-blue-900 p-8 border-r-white border-r ">
+          <dt class="text-sm font-normal leading-6 text-gray-50">Security events per year</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-blue-300">2+
+trillion</dd>
+        </div>
+        <div class="el flex flex-col bg-blue-900 p-8 border-r-white border-r">
+          <dt class="text-sm font-normal leading-6 text-gray-50">IP scans and audits per year</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-blue-300">6+
+billion</dd>
+        </div>
+        <div class="el flex flex-col bg-blue-900 p-8 border-r-white border-r">
+          <dt class="text-sm font-normal leading-6 text-gray-50">Kafka messages per day</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-blue-300">5+
+billion</dd>
+        </div>
+		<div class="el flex flex-col bg-blue-900 p-8 border-r-white border-r">
+          <dt class="text-sm font-normal leading-6 text-gray-50">Integrated IT, security and compliance apps</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-blue-300">20+
+apps</dd>
+        </div>
+		<div class="el flex flex-col bg-blue-900 p-8 ">
+          <dt class="text-sm font-normal leading-6 text-gray-50">99.99966% Six Sigma scanning accuracy</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-blue-300">6σ</dd>
+        </div>
+      </dl>
+    </div>
+    <a href="" class="mt-10 flex items-center justify-center gap-x-6 ">
+      <button type="button" class="button rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-violet-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Learn More</button>
+    </a>
+  </div>
+</section>
+
+<section id="whitepaper" class="hidden relative bg-white flex ">
+  <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2" src="https://ik.imagekit.io/dumani/test-tailwind-ui/whitepaper_K4MLIRILJo.jpg?updatedAt=1718291685589" alt="">
+  <div class="mx-auto grid max-w-7xl lg:grid-cols-2 ">
+    <div class="px-6 pb-24 pt-16 sm:pb-32 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32">
+      <div class="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
+        <h2 class="text-base font-semibold leading-8 text-blue-500">Analyst Whitepaper</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Real Value. Real ROI.</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Deliver up to 403% ROI with a unified platform approach to de-risk your business.</p>
+        <dl class="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
+          <div class="el flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+            <dt class="text-sm leading-6 text-gray-600">ROI over 3 years</dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">403%</dd>
+          </div>
+          <div class="el flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+            <dt class="text-sm leading-6 text-gray-600">payback period</dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">5-Month</dd>
+          </div>
+          <div class="el flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
+            <dt class="text-sm leading-6 text-gray-600">in Benefits</dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">$5.1M</dd>
+          </div>
+        </dl>
+
+        <div class="mt=10 lg:w-full lg:max-w-2xl lg:flex-auto">
+          <p class="mt-10 max-w-xl text-base leading-7 text-gray-700">Streamline workflows with a single agent and platform approach, reducing time spent eliminating risk.</p>
+          <p class="mt-10 max-w-xl text-base leading-7 text-gray-700">Lower TCO by consolidating point solutions to measure, communicate, and eliminate risk.</p>
+          <p class="mt-10 max-w-xl text-base leading-7 text-gray-700">Achieve a five-month payback period on their initial investment.</p>
+          <div class=" mt-10">
+            <a href=""><button type="button" class="button rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-violet-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Read Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="hidden relative bg-white py-24 sm:py-32  bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')]">
+  <div class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"></div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+    <div class="mx-auto sm:text-center mb-20">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">The majority of the <mark class="px-2 bg-yellow-300 rounded dark:bg-blue-500">Forbes Global 100</mark> and <mark class="px-2  bg-yellow-300 rounded dark:bg-blue-500" >Fortune 100</mark> trust the Enterprise TruRisk Platform to measure, communicate, and eliminate cyber risk</h2>
+    </div>
+    <div class="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div class="el flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
+        <img class="h-12 self-start" src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg" alt="">
+        <figure class="mt-10 flex flex-auto flex-col">
+          <blockquote class="text-lg leading-8 text-gray-900 bg-blue-100 rounded-lg p-6 italic flex items-start">
+            <img class="mr-5 w-16 mt-[9px]" src="https://ik.imagekit.io/dumani/test-tailwind-ui/quote_F0lWKdGMv.png?updatedAt=1718465984351" alt="quote">
+            <p>Now we have a dashboard where we’re able to see everything and take action quickly. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sunt maiores dolores laboriosam.</p>
+          </blockquote>
+          <figcaption class="mt-10 flex items-center gap-x-6">
+            <img class="h-14 w-14 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            <div class="text-base">
+              <div class="font-semibold text-gray-900">Hemanta Swain</div>
+              <div class="mt-1 text-gray-500">VP & CISO, TiVo</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="el flex flex-col border-t border-gray-900/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
+        <img class="h-12 self-start" src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg" alt="">
+        <figure class="mt-10 flex flex-auto flex-col">
+          <blockquote class="text-lg leading-8 text-gray-900 bg-blue-100 rounded-lg p-6 italic flex items-start">
+            <img class="mr-5 w-16 mt-[9px]" src="https://ik.imagekit.io/dumani/test-tailwind-ui/quote_F0lWKdGMv.png?updatedAt=1718465984351" alt="quote">
+            <p>Qualys reduces our risk by helping us be constantly present across all our devices.</p>
+          </blockquote>
+          <figcaption class="mt-10 flex items-center gap-x-6">
+            <img class="h-14 w-14 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            <div class="text-base">
+              <div class="font-semibold text-gray-900">Mike Orosz</div>
+              <div class="mt-1 text-gray-500">CISO, Cisco</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class=" mt-10 flex items-center justify-center gap-x-6">
+      <a href=""><button type="button" class="button rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-violet-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">More Success Stories</button></a>
+    </div>
+  </div>
+</section>
+
+<section id="events" class="bg-white pt-24 bg-violet-100 " style="background-image: radial-gradient(circle at 100% 100%, rgba(125463, 102, 255, 0.5), rgba(163, 102, 255, 0) 50%), radial-gradient(circle at 0px 0px, rgba(77, 23, 154, 0.5), rgba(77, 23, 154, 0) 50%);">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-tight text-violet-900 sm:text-4xl">Customer Trust: <br> The Ultimate Recognition and Award</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600 hidden">Don’t miss out on unique opportunities that feature security thought leaders, Qualys customers, and product experts who will share their expertise to help you measure, communicate, and eliminate the risk that threatens your attack surface.</p>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-10 gap-y-10 text-lg leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-10 lg:gap-y-16">
+        <div class="el relative pl-9">
+          <dt class=" font-semibold text-gray-900">
+            <img class="absolute -left-3 top-1 h-10 w-10" src="https://aisera.com/wp-content/uploads/2024/10/g2-logo.svg" alt="">
+            Flexible, effective, easy to implement, engaged services delivery team
+          </dt>
+          <dd class="inline">— Senior Manager of IT Support
+          </dd>
+        </div>
+        <div class="el relative pl-9">
+          <dt class=" font-semibold text-gray-900">
+            <img class="absolute -left-3 top-1 h-10 w-10" src="https://aisera.com/wp-content/uploads/2024/10/g2-logo.svg" alt="">
+            Love the automation experience that we've added to our environment
+          </dt>
+          <dd class="inline">— IT Support
+          </dd>
+        </div>
+        <div class="el relative pl-9">
+          <dt class=" font-semibold text-gray-900">
+            <img class="absolute -left-3 top-1 h-10 w-10" src="https://aisera.com/wp-content/uploads/2024/10/g2-logo.svg" alt="">
+            Finally an ML/AI tool that’s not a black-box that puts you in control
+          </dt>
+          <dd class="inline">— Product Manager, Employee Enablement
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="flex flex-row justify-center items-center mb-6 mt-12"> <a href="#" class="font-base leading-6 text-[#FF5D5F] text-lg mr-2" aria-describedby="featured-post">Read more G2 reviews</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+      <path d="M12.5309 5.14V4.36C12.3042 4.33333 12.0909 4.29333 11.8909 4.24C11.6909 4.18667 11.4842 4.11333 11.2709 4.02C11.0575 3.92667 10.8575 3.82667 10.6709 3.72C10.4842 3.6 10.2975 3.44667 10.1109 3.26L8.17086 1.34L9.41086 0.14L15.2509 6L9.41086 11.88L8.17086 10.66L10.0309 8.82C10.2575 8.60667 10.4775 8.43333 10.6909 8.3C10.9042 8.16667 11.1175 8.06 11.3309 7.98C11.5309 7.9 11.7309 7.83333 11.9309 7.78C12.1309 7.71333 12.3309 7.67333 12.5309 7.66V6.88L0.0308594 6.88L0.0308594 5.14L12.5309 5.14Z" fill="#FF5D5F"></path>
+    </svg> </div>
+
+    <div class="marquee marquee--3 no-mask awards gap-x-[30px] mt-16">
+      <img class="marquee__item h-40 max-h-40 mx-6" src="https://ik.imagekit.io/dumani/test-tailwind-ui/microsoft_UsAcJ1EyRg.png?updatedAt=1738483104886" alt="">
+      <img class="marquee__item h-40 max-h-40 mx-6" src="https://ik.imagekit.io/dumani/test-tailwind-ui/ai-award_w7Gw95PfN.png?updatedAt=1738483104905" alt="">
+      <img class="marquee__item h-40 max-h-40 mx-6" src="https://ik.imagekit.io/dumani/test-tailwind-ui/deloitte_QtloQXcFNa.png?updatedAt=1738483104897" alt="">
+      <img class="marquee__item h-40 max-h-40 mx-6" src="https://ik.imagekit.io/dumani/test-tailwind-ui/forbes_QvKdkerjU.png?updatedAt=1738483104932" alt="">
+      <img class="marquee__item h-40 max-h-40 mx-6" src="https://ik.imagekit.io/dumani/test-tailwind-ui/inc_ZVr4Ze9i9f.png?updatedAt=1738483104945" alt="">
+      <img class="marquee__item h-40 max-h-40 mx-6 rounded-full" src="https://ik.imagekit.io/dumani/test-tailwind-ui/ai-fintech_KQPr4X_Jny.png?updatedAt=1738483104939" alt="">
+      <img class="marquee__item h-40 max-h-40 mx-6" src="https://ik.imagekit.io/dumani/test-tailwind-ui/aws_ScgSO6D7b2.png?updatedAt=1738483104937" alt="">
+      <img class="marquee__item h-40 max-h-40 mx-6" src="https://ik.imagekit.io/dumani/test-tailwind-ui/data_dm-ti24It.png?updatedAt=1738483104944" alt="">
+  </div>
+  </div>
+  <div class="bottom-curves mt-20"></div>
+</section>
+
+<section id="news" class="bg-violet-950 pt-12 sm:pb-32 relative">
+  <div class="el mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl sm:text-center mb-8">
+      <p class="text-lg font-semibold leading-7 text-violet-200 hidden">Supercharge your Workforce with AI Agents</p>
+      <h2 class="mx-auto max-w-2xl mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Aisera is the Only Leader Recognized in <span class="text-yellow-200">All</span> Analyst Rankings</h2>
+      <p class="mt-6 text-lg leading-8 text-white hidden">Revolutionize employee experience with autonomous AI agents that get work done across multiple domains.</p>
+    </div>
+  </div>
+
+  
+  <div class="mx-auto max-w-5xl flex flex-row pb-24 justify-center text-white font-semibold analysts">    
+    <div class="button one-flash text-center min-w-[170px] px-4 py-2 bg-yellow-200 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">GARTNER </div>
+    <div class="button one-flash text-center min-w-[170px] px-4 py-2 bg-purple-300 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">FORRESTER</div>
+    <div class="button one-flash text-center min-w-[170px] px-4 py-2 bg-purple-300 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">IDC</div>
+    <div class="button one-flash text-center min-w-[170px] px-4 py-2 bg-purple-300 hover:bg-yellow-200 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">GOLDMAN SACHS</div>
+  </div>
+  <div class="mx-auto max-w-7xl flex flex-row px-6 lg:px-8 items-start">
+    <div class="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
+      <div class="-my-12 divide-y divide-white">
+        <div class="el flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
+          <img class="h-12 self-start" src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg" alt="">
+          <p class="text-3xl leading-12 text-violet-300 mb-12 px-6 border-l-4 border-purple-300">2024 Gartner® Magic Quadrant™ for Artificial Intelligence Applications in IT Service Management</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" fill="#fff085"/></svg>
+          <figure class="mt-5 flex flex-auto flex-col">
+            <blockquote class="text-2xl leading-12 text-white  rounded-lg italic flex items-start">
+              <p>Aisera addresses a wide set of AI applications in ITSM use cases within its offering. Customers can leverage Aisera’s proprietary LLM or bring their own models and use the LLM Studio to tune them with their own knowledge and ITSM data.</p>
+            </blockquote>
+            <figcaption class="mt-10 flex items-center gap-x-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="176" height="52" viewBox="0 0 176 52" fill="none"><path d="M175.024 18.9922L174.509 25.0716H172.018C168.048 25.0716 165.988 28.2442 165.988 31.3005V45.0374H158.979V18.9922H165.639L165.789 22.2478C167.184 20.022 169.626 18.9922 172.649 18.9922H175.024Z" fill="#fff085"></path><path d="M126.306 45.0387H119.279V31.2686C119.279 28.3784 119.014 24.7573 114.977 24.7573C111.074 24.7573 109.513 27.5811 109.513 30.8534V45.0221H102.486V18.9935H109.014L109.164 22.3156C110.559 20.0898 113.167 18.3457 117.004 18.3457C124.097 18.3457 126.322 23.4119 126.322 28.6608L126.306 45.0387Z" fill="#fff085"></path><path d="M99.4138 38.958L98.9155 44.8879C97.2876 45.3198 95.61 45.5357 93.9157 45.5025C87.2881 45.5025 85.3613 42.4628 85.3613 36.3501V11.6504H92.4042V18.9922H99.3972L98.9155 25.0716H92.4042V35.802C92.4042 38.2603 93.0686 39.5726 95.5934 39.5726C96.889 39.5892 98.1846 39.3732 99.4138 38.958Z" fill="#fff085"></path><path d="M83.0688 18.9922L82.5207 25.0716H80.6104C76.6572 25.0716 74.6805 28.2442 74.6805 31.3005V45.0374H67.6543V18.9922H74.2985L74.4314 22.2478C75.8432 20.0386 78.285 18.9922 81.3081 18.9922H83.0688Z" fill="#fff085"></path><path d="M35.9118 42.1477C31.1446 44.7057 26.3774 46.1674 20.082 45.9847C8.4215 45.6359 0 38.3771 0 26.1518C0 13.9763 8.50455 6.18602 20.0986 6.0033C25.9788 5.92025 31.2277 7.39858 35.347 11.0363L30.3805 16.036C27.8391 13.86 24.1018 12.5977 19.6169 12.797C12.325 13.1292 7.92319 18.4445 7.82352 25.7199C7.72386 33.6099 12.5741 39.0581 20.1485 39.2574C23.7197 39.3405 26.2611 38.8754 28.4703 37.8788V29.8227H20.597L21.1285 23.1951H35.8952L35.9118 42.1477Z" fill="#fff085"></path><path d="M155.839 34.5067H136.555C137.103 37.8288 139.727 39.8387 142.983 39.9383C146.155 40.0214 147.916 39.0746 150.242 36.7159L154.826 40.1875C151.57 44.2072 147.65 45.6689 143.182 45.6689C135.342 45.6689 129.479 40.1875 129.479 32.0151C129.479 23.8428 135.325 18.3613 142.9 18.3613C151.255 18.3613 155.823 23.4275 155.823 32.3972L155.839 34.5067ZM148.796 29.0419C148.581 25.753 146.122 23.6767 142.717 23.8096C139.329 23.9424 137.02 26.1682 136.555 29.0419H148.796Z" fill="#fff085"></path><path d="M63.2202 27.979V45.0379H57.0079L56.8584 42.4633C54.9648 44.822 51.8753 45.6691 48.686 45.6691C43.9022 45.6691 39.3842 43.3105 39.2845 37.8124C39.1516 29.175 49.0183 28.5604 55.214 28.5604H56.4597V28.2115C56.4597 25.3545 54.5661 23.8098 51.0115 23.8098C48.4203 23.8264 45.9453 24.8064 44.0517 26.5837L39.9988 22.4643C43.2544 19.7568 47.3738 18.2951 51.5929 18.3615C59.6656 18.3615 63.2202 22.0823 63.2202 27.979ZM56.4597 33.6764H55.4797C52.1576 33.6764 46.3108 33.8425 46.3274 37.3307C46.3606 42.2474 56.4597 40.6694 56.4597 34.7561V33.6764Z" fill="#fff085"></path><path d="M169.543 41.9985C169.592 40.4205 170.905 39.1913 172.466 39.2412C174.044 39.291 175.273 40.6032 175.223 42.1646C175.173 43.7094 173.911 44.9219 172.383 44.9219C170.805 44.9219 169.543 43.6429 169.543 42.0815C169.543 42.0649 169.543 42.0317 169.543 41.9985ZM172.383 45.5199C174.31 45.4867 175.871 43.9087 175.838 41.9653C175.805 40.0385 174.227 38.4771 172.283 38.5103C170.373 38.5435 168.828 40.0883 168.828 41.9985C168.812 43.9253 170.373 45.5033 172.3 45.5199C172.333 45.5199 172.366 45.5199 172.383 45.5199ZM171.635 42.2809H172.35L173.413 44.025H174.094L172.964 42.2476C173.562 42.1812 173.994 41.849 173.994 41.1347C173.994 40.3374 173.529 39.9886 172.566 39.9886H171.037V44.025H171.652L171.635 42.2809ZM171.635 41.7659V40.5202H172.466C172.898 40.5202 173.346 40.6032 173.346 41.1181C173.346 41.7327 172.881 41.7825 172.366 41.7825L171.635 41.7659Z" fill="#ffffff"></path></svg>
+            </figcaption>
+          </figure>
+          <div class="flex flex-row items-center mb-6 mt-6"> <a href="#" class="font-base leading-6 text-[#FF5D5F] text-lg mr-2" aria-describedby="featured-post">Learn More</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+            <path d="M12.5309 5.14V4.36C12.3042 4.33333 12.0909 4.29333 11.8909 4.24C11.6909 4.18667 11.4842 4.11333 11.2709 4.02C11.0575 3.92667 10.8575 3.82667 10.6709 3.72C10.4842 3.6 10.2975 3.44667 10.1109 3.26L8.17086 1.34L9.41086 0.14L15.2509 6L9.41086 11.88L8.17086 10.66L10.0309 8.82C10.2575 8.60667 10.4775 8.43333 10.6909 8.3C10.9042 8.16667 11.1175 8.06 11.3309 7.98C11.5309 7.9 11.7309 7.83333 11.9309 7.78C12.1309 7.71333 12.3309 7.67333 12.5309 7.66V6.88L0.0308594 6.88L0.0308594 5.14L12.5309 5.14Z" fill="#FF5D5F"></path>
+          </svg> </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32" style="box-shadow: 0 0 50px 10px #f3f8f8;     border-radius: 1em;">
+      <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+        <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+          <img src="https://ik.imagekit.io/dumani/test-tailwind-ui/gartner_hugMQ6FIt.jpg?updatedAt=1738363347523" width=""  class="h-[500px] rounded-md shadow-2xl ring-1 ring-gray-900/10">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--
+https://unsplash.com/photos/black-mountains-under-blue-sky-during-daytime-b7L37M6mDZg
+-->
+<section id="trial" class="bg-violet-100" >
+  <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div class="mx-auto max-w-5xl flex flex-row ">
+      <div class="mx-auto max-w-3xl flex flex-col justify-center items-center">
+        <h2 class="el text-4xl max-w-2xl font-bold text-violet-900 sm:text-4xl text-center mb-8">Gain exceptional user experience & reduce support cost.</h2>
+        <div class="whitespace-nowrap lg:flex lg:flex-1 lg:gap-x-12  ">
+          <a href=""><button class="button cta rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Get a Demo</button></a>
+        </div>
+      </div>
+
+      <div class="mx-auto max-w-3xl flex flex-col justify-center items-center">
+        <h2 class="el text-4xl max-w-2xl font-bold text-violet-900 sm:text-4xl text-center mb-8">Get answers and a customized
+          quote for your projects.</h2>
+        <div class="whitespace-nowrap lg:flex lg:flex-1 lg:gap-x-12  ">
+          <a href=""><button class="button cta rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Submit RFP</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-white relative isolate" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="space-y-8">
+        <img class="h-10" src="https://aisera.com/wp-content/themes/aisera_child_theme/images/aisera-logo.svg" alt="Aisera">
+
+        <h3 class="text-base font-semibold leading-6 text-gray-900">Certifications</h3>
+        <div class="flex flex-wrap items-center">
+          <a href=""><img class="max-h-[50px] mr-6 mb-6" src="https://aisera.com/wp-content/uploads/2022/12/ISO-27001.png" alt=""></a>
+          <a href=""><img class="max-h-[50px] mr-6 mb-6" src="https://aisera.com/wp-content/uploads/2022/11/Footer_s2_1_AICPASOC.png" alt=""></a>
+          <a href=""><img class="max-h-[50px] mr-6 mb-6" src="https://aisera.com/wp-content/uploads/2022/11/Footer_s2_2_GDPA.png" alt=""></a>
+          <a href=""><img class="max-h-[50px] mr-6 mb-6" src="https://aisera.com/wp-content/uploads/2022/11/Footer_s2_3_CSA-Star-Level-1.png" alt=""></a>
+          <a href=""><img class="max-h-[50px] mr-6 mb-6 rounded-xl" src="https://aisera.com/wp-content/uploads/2022/10/Footer_s2_1_HIPAA-150x78.png" alt=""></a>
+          <a href=""><img class="max-h-[50px] mr-6 mb-6" src="https://aisera.com/wp-content/uploads/2022/10/Footer_s2_4_CCPA.png" alt=""></a>
+        </div>
+
+        <h3 class="text-base font-semibold leading-6 text-gray-900">Reviews</h3>
+        <div class="flex flex-wrap items-center">
+          <a href=""><img class="max-h-[50px] mr-6 mb-6" src="https://aisera.com/wp-content/uploads/2022/11/Footer_s1_1_G2.png" alt=""></a>
+          <a href=""><img class="max-h-[50px] mr-6 mb-6 border border-slate-200" src="https://aisera.com/wp-content/uploads/2022/11/Footer_s1_2_Gartner.png" alt=""></a>
+        </div>
+
+        <h3 class="text-base font-semibold leading-6 text-gray-900">Follow Us</h3>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg class="h-[50px] w-[50px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg class="h-[50px] w-[50px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">X</span>
+            <svg class="h-[50px] w-[50px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg class="h-[50px] w-[50px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">YouTube</span>
+            <svg class="h-[50px] w-[50px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+        
+      </div>
+      <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-base font-semibold leading-6 text-gray-900">Products</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AiseraGPT</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Copilot</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Search</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Agent Assist</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Voice Bot</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Gen AI Platform</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Service Desk</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Customer Service</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AIOps</a>
+              </li>
+            </ul>
+
+            <h3 class="text-base font-semibold leading-6 text-gray-900 mt-12">AI ROI Calculator</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Service Desk</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Customer Service</a>
+              </li>
+            </ul>
+          </div>
+
+        
+
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-base font-semibold leading-6 text-gray-900">Platform</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Conversational AI</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Workflows</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Customer Intelligence</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI Support Intelligence</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AI SQL Dialogue Engine</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Universal Bot</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Next-Gen AI ITSM</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Omnichannel Experience</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Analytics and Dashboard</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Security and Compliance</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Integrations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-base font-semibold leading-6 text-gray-900">Resources</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Product Demos</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Analyst Reports</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Case Studies</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Data Sheets</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">E-Books</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Data Sheets</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Solution Briefs</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">White Papers</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Videos</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Webinars</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Podcasts</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Thought Leadership</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-base font-semibold leading-6 text-gray-900">Company</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Aisera Gen AI Academy</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">News Coverage</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Press Releases</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Contact Us</a>
+              </li>
+            </ul>
+
+            <h3 class="text-base font-semibold leading-6 text-gray-900 mt-12">Trust</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">TRAPS Framework</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Security and Compliance</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Trust Center</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">System Status</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 ">
+      <p class="text-sm leading-6 text-gray-600">&copy; 2025 Aisera, Inc. All rights reserved. | <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Sitemap</a></p>
+    </div>
+  </div>
+  <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-35rem)]" aria-hidden="true">
+      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#38bdf8] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+</footer>
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js-aisera2/sticky-nav.js"></script>
+    <script src="/js-aisera2/hero-slider.js"></script>
+    <script src="/js-aisera2/home-page-animation.js"></script>
+  </body>
+</html>
+
