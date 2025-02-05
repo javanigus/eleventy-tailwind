@@ -527,6 +527,9 @@
   .invisible {
     visibility: hidden;
   }
+  .visible {
+    visibility: visible;
+  }
   .sr-only {
     position: absolute;
     width: 1px;
@@ -817,9 +820,6 @@
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
-  .h-\[50px\] {
-    height: 50px;
-  }
   .h-\[100vh\] {
     height: 100vh;
   }
@@ -828,6 +828,9 @@
   }
   .h-\[500px\] {
     height: 500px;
+  }
+  .h-\[50px\] {
+    height: 50px;
   }
   .h-full {
     height: 100%;
@@ -1194,9 +1197,6 @@
   .border-purple-300 {
     border-color: var(--color-purple-300);
   }
-  .border-sky-300 {
-    border-color: var(--color-sky-300);
-  }
   .border-slate-200 {
     border-color: var(--color-slate-200);
   }
@@ -1208,9 +1208,6 @@
   }
   .bg-\[\#025EC4\] {
     background-color: #025EC4;
-  }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
   }
   .bg-blue-100 {
     background-color: var(--color-blue-100);
@@ -1253,21 +1250,6 @@
   }
   .bg-red-600 {
     background-color: var(--color-red-600);
-  }
-  .bg-sky-100 {
-    background-color: var(--color-sky-100);
-  }
-  .bg-sky-300 {
-    background-color: var(--color-sky-300);
-  }
-  .bg-sky-500 {
-    background-color: var(--color-sky-500);
-  }
-  .bg-sky-800 {
-    background-color: var(--color-sky-800);
-  }
-  .bg-sky-950 {
-    background-color: var(--color-sky-950);
   }
   .bg-slate-50 {
     background-color: var(--color-slate-50);
@@ -1569,9 +1551,6 @@
   .text-amber-200 {
     color: var(--color-amber-200);
   }
-  .text-amber-300 {
-    color: var(--color-amber-300);
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -1607,18 +1586,6 @@
   }
   .text-neutral-50 {
     color: var(--color-neutral-50);
-  }
-  .text-sky-200 {
-    color: var(--color-sky-200);
-  }
-  .text-sky-300 {
-    color: var(--color-sky-300);
-  }
-  .text-sky-800 {
-    color: var(--color-sky-800);
-  }
-  .text-sky-900 {
-    color: var(--color-sky-900);
   }
   .text-slate-700 {
     color: var(--color-slate-700);
@@ -1716,8 +1683,28 @@
     --tw-drop-shadow: drop-shadow(var(--drop-shadow-md));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .grayscale {
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .ease-in {
+    --tw-ease: var(--ease-in);
+    transition-timing-function: var(--ease-in);
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
+  .\[e6\:�G����u��i�\15 \^\*\5 �I��\6 ����\/�y��\@�sų�И�5�\5 �ٕ�H��\.��\<��\15 \%ho��\1f �J0ˌ�\7 �����\8 G\"oмnh\"\13 \1e 5i��\7 \] {
+    e6: �G����u��i�^*�I������/�y��@�sų�И�5��ٕ�H��.��<��%ho���J0ˌ������G"oмnh"5i��;
   }
   .\[mask-image\:radial-gradient\(100\%_100\%_at_top_right\,white\,transparent\)\] {
     mask-image: radial-gradient(100% 100% at top right,white,transparent);
@@ -1739,13 +1726,6 @@
       }
     }
   }
-  .hover\:bg-amber-300 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-amber-300);
-      }
-    }
-  }
   .hover\:bg-gray-50 {
     &:hover {
       @media (hover: hover) {
@@ -1764,13 +1744,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-red-700);
-      }
-    }
-  }
-  .hover\:bg-sky-900 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-sky-900);
       }
     }
   }
@@ -2633,6 +2606,10 @@
   inherits: false;
 }
 @property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
   syntax: "*";
   inherits: false;
 }
