@@ -12,7 +12,3 @@ h1, h2, h3, h4 {
 	font-family: "Lexend", sans-serif;
   	font-optical-sizing: auto;
 }
-.swiper2 .swiper-slide {
-	margin-right: 50px;
-	max-width: fit-content;
-}

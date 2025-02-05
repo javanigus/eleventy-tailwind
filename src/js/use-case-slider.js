@@ -5,6 +5,7 @@
 	new Swiper('.swiper2', {
 		// Optional parameters
 		direction: 'horizontal',
+		spaceBetween: 30,
 		/*autoplay: {
 			delay: 3000,
 			disableOnInteraction: false,
