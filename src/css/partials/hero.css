@@ -13,6 +13,9 @@
 	max-height: 912px;
 }
 .slide1 {
-    background-color: #8533ff !important;
-    background-image: radial-gradient(circle at 100% 100%, #67e2fe80, #67e2fe00 50%), radial-gradient(circle at 0 0, #ffffff80, #fff0 50%);
+    /* background-color: var(--color-sky-500) !important;*/
+    background: linear-gradient(115deg, var(--color-sky-800) 0%, var(--color-sky-800) 24%, var(--color-sky-700) 24%, var(--color-sky-700) 43%, var(--color-sky-600) 43%, var(--color-sky-600) 52%, var(--color-sky-500) 52%, var(--color-sky-500) 100%);
+    animation: animate 5s ease infinite alternate;
 }
+@keyframes animate {
+  }
