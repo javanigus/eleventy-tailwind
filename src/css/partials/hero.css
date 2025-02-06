@@ -17,5 +17,31 @@
     background: linear-gradient(115deg, var(--color-sky-800) 0%, var(--color-sky-800) 24%, var(--color-sky-700) 24%, var(--color-sky-700) 43%, var(--color-sky-600) 43%, var(--color-sky-600) 52%, var(--color-sky-500) 52%, var(--color-sky-500) 100%);
     animation: animate 5s ease infinite alternate;
 }
-@keyframes animate {
-  }
+
+.slide2 {
+    background-color:hsla(200,98%,39%,1);
+    background-image:
+    radial-gradient(at 69% 74%, hsla(200,89%,27%,1) 0px, transparent 50%),
+    radial-gradient(at 87% 8%, hsla(201,96%,32%,1) 0px, transparent 50%),
+    radial-gradient(at 56% 87%, hsla(200,98%,39%,1) 0px, transparent 50%),
+    radial-gradient(at 93% 69%, hsla(198,88%,48%,1) 0px, transparent 50%),
+    radial-gradient(at 88% 91%, hsla(198,93%,59%,1) 0px, transparent 50%);
+
+    animation: gradient 13s ease infinite alternate;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 20%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 50% 70%;
+    }
+    100% {
+        background-position: 0% 20%;
+    }
+}
