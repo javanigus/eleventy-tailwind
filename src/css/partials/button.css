@@ -4,12 +4,12 @@
 	overflow: hidden;
 }
 .button.cta {
-  background-color: var(--color-amber-300);
+  background-color: #FF5D5F;
   transition: background-color .2s ease-in;
-  color: black;
+  color: white;
 }
 .button.cta:hover {
-  background-color:  var(--color-amber-400);
+  background-color:  var(--color-sky-800);
   cursor: pointer;
 }
 .button span {
