@@ -7,8 +7,3 @@ a:hover {
 .white-text-shadow {
 	text-shadow: 2px 2px 4px #000000;
 }
-
-h1, h2, h3, h4 {
-	font-family: "Lexend", sans-serif;
-  	font-optical-sizing: auto;
-}
