@@ -2,7 +2,7 @@
  * hero swiper https://swiperjs.com/
  */
 (function () {
-	new Swiper('.swiper', {
+	new Swiper('.hero', {
 		// Optional parameters
 		direction: 'horizontal',
 		/*autoplay: {

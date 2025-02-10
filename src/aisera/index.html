@@ -128,7 +128,7 @@
   </header>
 </div>
 
-<div id="hero" class="swiper max-h-[912px]">
+<div id="hero" class="swiper hero max-h-[912px]">
   <div class="swiper-wrapper">
     <div class="swiper-slide hero relative isolate overflow-hidden bg-white slide1" style="">
       <img class="absolute" style="height: 100%; right: 0; z-index: -1;" src="https://ik.imagekit.io/dumani/test-tailwind-ui/blue-A_sg8O-iORR.png" alt="">
@@ -267,63 +267,74 @@
 <div class="bg-slate-100 py-24 sm:py-32">
   <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
     <h2 class="text-base/7 font-semibold text-sky-600 hidden">Deploy faster</h2>
-    <p class="mt-2 max-w-lg text-pretty text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">Example Use Cases</p>
-    <p class="mt-6 text-lg leading-8 text-gray-600 ">Revolutionize employee experience with autonomous AI agents that get work done across multiple domains.</p>
-    <div class="mt-6 max-w-5xl flex flex-row flex-wrap  text-white font-semibold function">    
+    <p class="mx-auto mt-2 max-w-lg text-pretty text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">Example Use Cases</p>
+    <p class="text-center mt-6 text-lg leading-8 text-gray-600 ">Revolutionize employee experience with autonomous AI agents that get work done across multiple domains.</p>
+    <div class="mx-auto mt-6 max-w-5xl flex flex-row flex-wrap  text-white font-semibold function">    
       <div class="button one-flash text-center min-w-[185px] px-4 py-2 bg-amber-300 hover:bg-[amber-300] hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">AI Copilot</div>
       <div class="button one-flash text-center min-w-[185px] px-4 py-2 bg-sky-600 text-white hover:text-black hover:bg-amber-300 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">Agent Assist</div>
       <div class="button one-flash text-center min-w-[185px] px-4 py-2 bg-sky-600 text-white hover:text-black hover:bg-amber-300 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">AI Voice Bot</div>
       <div class="button one-flash text-center min-w-[185px] px-4 py-2 bg-sky-600 text-white hover:text-black hover:bg-amber-300 hover:cursor-pointer text-black rounded-lg m-3 inset-shadow-sm inset-shadow-indigo-500/50">AIOps</div>
     </div>
-    <div class="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-6 lg:grid-rows-2">
-      <div class="relative lg:col-span-3">
-        <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
-          <img class="h-100 object-cover object-left" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-600_dYdJnMhhp.png" alt="">
+
+    <div class="swiper use-cases mt-10">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative flex h-full flex-col overflow-hidden rounded-xl !w-[560px]">
+          <img class="object-cover object-left" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-600_dYdJnMhhp.png" alt="">
           <div class="p-10 pt-4 bg-gray-200">
             <h3 class="text-lg font-semibold text-sky-600">IT</h3>
             <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Refer a friend</p>
             <p class="mt-2 max-w-lg text-md text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.</p>
           </div>
         </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]"></div>
-      </div>
-      <div class="relative lg:col-span-3">
-        <div class="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
-          <img class="h-100 object-cover object-left lg:object-right" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-2-600_qdZf1sdp-.png" alt="">
+  
+        <div class="swiper-slide relative flex h-full flex-col overflow-hidden rounded-xl !w-[560px]">
+          <img class="object-cover object-left" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-2-600_qdZf1sdp-.png" alt="">
           <div class="p-10 pt-4 bg-gray-200">
             <h3 class="text-lg font-semibold text-sky-600">IT</h3>
-            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Automate time-off requests</p>
-            <p class="mt-2 max-w-lg text-md text-gray-600">Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus massa, laoreet dapibus ex elit vitae odio.</p>
-          </div>
-        </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-tr-[2rem]"></div>
-      </div>
-      <div class="relative lg:col-span-3">
-        <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-bl-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-bl-[calc(2rem+1px)]">
-          <img class="h-100 object-cover object-left" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-2-600_qdZf1sdp-.png" alt="">
-          <div class="p-10 pt-4 bg-gray-200">
-            <h3 class="text-lg font-semibold text-sky-600">HR</h3>
-            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Badge request</p>
+            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Refer a friend</p>
             <p class="mt-2 max-w-lg text-md text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.</p>
           </div>
         </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-bl-[2rem]"></div>
-      </div>
-      <div class="relative lg:col-span-3">
-        <div class="absolute inset-px rounded-lg bg-white lg:rounded-br-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-br-[calc(2rem+1px)]">
-          <img class="h-100 object-cover object-left lg:object-right" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-600_dYdJnMhhp.png" alt="">
+  
+        <div class="swiper-slide relative flex h-full flex-col overflow-hidden rounded-xl !w-[560px]">
+          <img class="object-cover object-left" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-600_dYdJnMhhp.png" alt="">
           <div class="p-10 pt-4 bg-gray-200">
-            <h3 class="text-lg font-semibold text-sky-600">HR</h3>
-            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Wellness</p>
-            <p class="mt-2 max-w-lg text-md text-gray-600">Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus massa, laoreet dapibus ex elit vitae odio.</p>
+            <h3 class="text-lg font-semibold text-sky-600">IT</h3>
+            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Refer a friend</p>
+            <p class="mt-2 max-w-lg text-md text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.</p>
           </div>
         </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-br-[2rem]"></div>
+  
+        <div class="swiper-slide relative flex h-full flex-col overflow-hidden rounded-xl !w-[560px]">
+          <img class="object-cover object-left" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-2-600_qdZf1sdp-.png" alt="">
+          <div class="p-10 pt-4 bg-gray-200">
+            <h3 class="text-lg font-semibold text-sky-600">IT</h3>
+            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Refer a friend</p>
+            <p class="mt-2 max-w-lg text-md text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.</p>
+          </div>
+        </div>
+  
+        <div class="swiper-slide relative flex h-full flex-col overflow-hidden rounded-xl !w-[560px]">
+          <img class="object-cover object-left" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-600_dYdJnMhhp.png" alt="">
+          <div class="p-10 pt-4 bg-gray-200">
+            <h3 class="text-lg font-semibold text-sky-600">IT</h3>
+            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Refer a friend</p>
+            <p class="mt-2 max-w-lg text-md text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.</p>
+          </div>
+        </div>
+  
+        <div class="swiper-slide relative flex h-full flex-col overflow-hidden rounded-xl !w-[560px]">
+          <img class="object-cover object-left" src="https://ik.imagekit.io/dumani/test-tailwind-ui/use-case-2-600_qdZf1sdp-.png" alt="">
+          <div class="p-10 pt-4 bg-gray-200">
+            <h3 class="text-lg font-semibold text-sky-600">IT</h3>
+            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950">Refer a friend</p>
+            <p class="mt-2 max-w-lg text-md text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.</p>
+          </div>
+        </div>
       </div>
+  
+      <!-- If we need pagination -->
+      <div class="swiper-pagination !bottom-[-50px]"></div>
     </div>
   </div>
 </div>

@@ -2,20 +2,11 @@
  * hero swiper https://swiperjs.com/
  */
 (function () {
-	new Swiper('.swiper2', {
-		// Optional parameters
-		direction: 'horizontal',
+	new Swiper('.use-cases', {
+		slidesPerView: 3,
 		spaceBetween: 30,
-		/*autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-    		pauseOnMouseEnter: true,
-		},*/
-		speed: 400,
-		loop: true,
-		// If we need pagination
 		pagination: {
-			el: '.swiper-pagination2',
+			el: ".swiper-pagination",
 			clickable: true,
 		},
 	});
