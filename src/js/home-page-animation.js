@@ -3,7 +3,7 @@
  */
 (function () {
 
-	$(".el, .el2").css("opacity", 0);
+	$(".el, .el2, .gradient").css("opacity", 0);
 
 	anime({
 		targets: '.hero .el',
@@ -22,6 +22,13 @@
 		easing: 'easeOutCubic',
 		delay: anime.stagger(200) // increase delay by 100ms for each elements.
 	});
+
+	anime({
+		targets: '.gradient',
+		//translateX: [-300, 0],
+		opacity: [0,1],
+		delay: anime.stagger(100) // increase delay by 100ms for each elements.
+	  });	  
 
 	new Waypoint({
 		element: document.getElementById('de-risk'),
