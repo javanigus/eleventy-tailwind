@@ -14,9 +14,50 @@
 }
 .slide1 {
     /* background-color: var(--color-sky-500) !important;*/
-    background: linear-gradient(115deg, var(--color-sky-800) 0%, var(--color-sky-800) 24%, var(--color-sky-700) 24%, var(--color-sky-700) 43%, var(--color-sky-600) 43%, var(--color-sky-600) 52%, var(--color-sky-500) 52%, var(--color-sky-500) 100%);
-    animation: animate 5s ease infinite alternate;
+    /* background: linear-gradient(115deg, var(--color-sky-800) 0%, var(--color-sky-800) 24%, var(--color-sky-700) 24%, var(--color-sky-700) 43%, var(--color-sky-600) 43%, var(--color-sky-600) 52%, var(--color-sky-500) 52%, var(--color-sky-500) 100%) */
+    animation-name: angledGradient;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes angledGradient {
+    0%   {background: linear-gradient(115deg, 
+        var(--color-sky-800) 0%, 
+        var(--color-sky-800) 24%, 
+        white 24%, 
+        white 43%, 
+        white 43%, 
+        white 52%, 
+        white 52%, 
+        white 100%);}
+    25%  {background: linear-gradient(115deg, 
+        var(--color-sky-800) 0%, 
+        var(--color-sky-800) 24%, 
+        var(--color-sky-700) 24%, 
+        var(--color-sky-700) 43%, 
+        white 43%, 
+        white 52%, 
+        white 52%, 
+        white 100%);}
+    50%  {background: linear-gradient(115deg, 
+        var(--color-sky-800) 0%, 
+        var(--color-sky-800) 24%, 
+        var(--color-sky-700) 24%, 
+        var(--color-sky-700) 43%, 
+        var(--color-sky-600) 43%, 
+        var(--color-sky-600) 52%, 
+        white 52%, 
+        white 100%);}
+    100% {background: linear-gradient(115deg, 
+        var(--color-sky-800) 0%, 
+        var(--color-sky-800) 24%, 
+        var(--color-sky-700) 24%, 
+        var(--color-sky-700) 43%, 
+        var(--color-sky-600) 43%, 
+        var(--color-sky-600) 52%, 
+        var(--color-sky-500) 52%, 
+        var(--color-sky-500) 100%);}
+  }
 
 .slide2 {
     background-color:hsla(200,98%,39%,1);
