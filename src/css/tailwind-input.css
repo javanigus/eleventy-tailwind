@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.logo-cell {
+  aspect-ratio: 1;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.logo-cell:hover {
+  background: #f1f5f9;
+}
+
+.logo-cell img {
+  max-width: 60%;
+  max-height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.arrow-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.logo-cell:hover .arrow-icon {
+  opacity: 1;
+}
