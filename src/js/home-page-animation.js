@@ -23,12 +23,23 @@
 		delay: anime.stagger(200) // increase delay by 100ms for each elements.
 	});
 
-	anime({
+	var tl = anime.timeline({
+		
+	});
+	tl
+	.add({
 		targets: '.gradient',
 		//translateX: [-300, 0],
+		//duration: 500,
 		opacity: [0,1],
-		delay: anime.stagger(100) // increase delay by 100ms for each elements.
-	  });	  
+		easing: 'linear',
+		delay: anime.stagger(200) // increase delay by 100ms for each elements.
+	})
+	.add({
+		targets: '.aiseraA',
+		opacity: [0,1],
+		duration: 7000,
+	})
 
 	new Waypoint({
 		element: document.getElementById('de-risk'),
